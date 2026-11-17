@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cildinin Hikâyesi - Elif Kaya Beauty</title>
+<meta name="description" content="Cildinizi anlatın; cevaplarınıza göre kozmetik bakım önerilerinizi görün. Elif Kaya Beauty.">
+
+<style>
+:root{--mur:#4C124F;--mur2:#6E3A71;--pembe:#EE859B;--zemin:#FBF6FA;--kart:#fff;--yazi:#2b1a2c;--soluk:#7a6a7b;--cizgi:#ead9e8;--uyari:#fff4e5;--uyari-k:#b26a00;--tehlike:#fdecee;--tehlike-k:#a3122a;--ok:#eaf6ef}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Nunito Sans",-apple-system,Segoe UI,Roboto,sans-serif;background:var(--zemin);color:var(--yazi);line-height:1.5}
+.serit{background:#fff3cd;color:#6b4e00;text-align:center;padding:8px 16px;font-size:14px;border-bottom:1px solid #f0d98c}
+header{background:var(--mur);color:#fff;padding:28px 16px 24px;text-align:center}
+header h1{margin:0 0 6px;font-size:28px;letter-spacing:.3px}
+header p{margin:0 auto;max-width:620px;opacity:.9}
+main{max-width:820px;margin:0 auto;padding:16px}
+.kart{background:var(--kart);border:1px solid var(--cizgi);border-radius:14px;padding:18px 18px 8px;margin:16px 0;box-shadow:0 1px 2px rgba(76,18,79,.05)}
+.kart h2{font-size:18px;margin:0 0 4px;color:var(--mur)}
+.kart .alt{color:var(--soluk);font-size:14px;margin:0 0 12px}
+.secenek{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.secenek label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--cizgi);border-radius:999px;padding:7px 12px;cursor:pointer;font-size:15px;background:#fff;user-select:none}
+.secenek input{accent-color:var(--mur)}
+.secenek label:has(input:checked){background:#f4e6f3;border-color:var(--mur2)}
+.sira{display:inline-block;min-width:20px;height:20px;border-radius:50%;background:var(--mur);color:#fff;font-size:12px;text-align:center;line-height:20px;margin-left:2px}
+.soru{font-weight:700;margin:6px 0 6px;font-size:15px}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:12px 22px;background:var(--mur);color:#fff;font-weight:700}
+button.ikincil{background:#fff;color:var(--mur);border:1px solid var(--mur)}
+button.kucuk-dugme{padding:7px 14px;font-size:13px;font-weight:600}
+.butonlar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:20px 0}
+.gizli{display:none}
+.zaman{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.zaman{grid-template-columns:1fr}}
+.zaman h3{margin:0 0 8px;font-size:16px}
+ol.adim,ul.adim{margin:0;padding-left:22px}
+ol.adim li,ul.adim li{margin:0 0 10px}
+.urun a{color:var(--mur);font-weight:700;text-decoration:none}
+.urun a:hover{text-decoration:underline}
+.tur{color:var(--soluk);font-size:13px}
+.ya{color:var(--soluk);font-size:13px}
+.etiket{display:inline-block;font-size:11px;border-radius:6px;padding:1px 6px;margin-left:4px;vertical-align:1px}
+.e-akademi{background:#e6eefc;color:#1d3f8a}
+.e-karar{background:#f4e6f3;color:#6E3A71}
+.e-metin{background:#e3f3ea;color:#1f6b40}
+.e-varsayilan{background:#fff1d6;color:#8a5a00}
+.e-acik{background:#ffe7d1;color:#8a3a00}
+.stok{color:#a3122a;font-size:12px;font-weight:700}
+.kutu{border-radius:10px;padding:10px 12px;margin:8px 0;font-size:14px}
+.k-uyari{background:var(--uyari);color:#5b3a00;border-left:4px solid var(--uyari-k)}
+.k-tehlike{background:var(--tehlike);color:#5c0b18;border-left:4px solid var(--tehlike-k)}
+.k-bilgi{background:#f4e6f3;color:#3b1640;border-left:4px solid var(--mur2)}
+.k-ok{background:var(--ok);color:#174a2c;border-left:4px solid #2e8b57}
+.kucuk{font-size:13px;color:var(--soluk)}
+.toplam{font-size:14px;color:var(--mur);font-weight:700;margin:6px 0 10px}
+.elif{border:2px dashed var(--pembe);background:#fff8fa}
+.elif h2{color:#b0405a}
+.elif ul{margin:0 0 10px;padding-left:20px;font-size:14px}
+textarea{width:100%;min-height:110px;font:inherit;border:1px solid var(--cizgi);border-radius:10px;padding:10px}
+.yasal{font-size:13px;color:var(--soluk);text-align:center;margin:18px 0 30px}
+.yasal-sonuc{font-size:13px;color:var(--soluk);text-align:center;margin:10px 0 6px}
+input[type=text],input[type=date]{font:inherit;border:1px solid var(--cizgi);border-radius:10px;padding:8px 10px}
+input[type=text]{width:100%}
+</style>
+<style>
+html,body{overflow-x:hidden}
+img{max-width:100%;height:auto}
+header .ust{max-width:820px;margin:0 auto 14px;text-align:left}
+header .ust a{color:#fff;font-size:14px;text-decoration:none;opacity:.9}
+header .ust a:hover{text-decoration:underline}
+header .logo{display:block;width:220px;max-width:70%;margin:0 auto 12px}
+.gizlilik{background:#fff;border:1px solid var(--cizgi);border-left:4px solid var(--mur2);border-radius:10px;padding:10px 12px;margin:16px 0 0;font-size:14px;color:var(--yazi)}
+.gizlilik h2{font-size:16px;color:var(--mur);margin:0 0 6px}
+.gizlilik ul{margin:0;padding-left:20px}
+.gizlilik li{margin:0 0 6px}
+.gizlilik a,.yasal a{color:var(--mur)}
+.bildirim{color:#a3122a;font-weight:700;font-size:14px;margin:0 0 10px;text-align:center}
+.urun a.git{font-weight:400;font-size:13px;white-space:nowrap;text-decoration:underline}
+a.dugme{display:inline-block;text-decoration:none;border-radius:999px;padding:12px 22px;background:var(--mur);color:#fff;font-weight:700}
+a.dugme:hover{background:var(--mur2)}
+.ortala{text-align:center;max-width:620px;margin-left:auto;margin-right:auto}
+.zaman>div,.kart,.kutu,li{min-width:0;overflow-wrap:anywhere}
+@media (max-width:640px){main{padding:16px}.kart{padding:16px 14px 6px}header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="ust"><a href="https://elifkayabeauty.com.tr">‹ Elif Kaya Beauty ana sayfa</a></div>
+  <img class="logo" src="logo.png" alt="Elif Kaya Beauty" width="640" height="206">
+  <h1>Cildinin Hikâyesi</h1>
+  <p>Cildinizi anlatın; cevaplarınıza göre sabah ve akşam için kozmetik bakım önerilerinizi görün.</p>
+</header>
+<main>
+<div class="gizlilik"><b>Gizliliğiniz:</b> Cevaplarınız bu sayfanın kodu tarafından sunucuya gönderilmez, kalıcı depolamaya yazılmaz; rutininiz tarayıcınızda hesaplanır. Ayrıntılar sayfanın sonunda.</div>
+<form id="f" onsubmit="return false" autocomplete="off">
+
+<div class="kart">
+  <h2>1. Sizi en çok ne rahatsız ediyor?</h2>
+  <p class="alt">En fazla 3 seçin. Seçtiğiniz sıra önceliğiniz olur (ilk seçtiğiniz en önemli).</p>
+  <div class="secenek" id="sikayetler"></div>
+  <p class="bildirim gizli" id="b-sikayet" role="alert"></p>
+</div>
+
+<div class="kart">
+  <h2>2. Cildinizi nasıl tarif edersiniz?</h2>
+  <div class="secenek" id="tip"></div>
+  <div class="soru">Yaşınız</div>
+  <div class="secenek" id="yas"></div>
+</div>
+
+<div class="kart">
+  <h2>3. Alışkanlıklarınız</h2>
+  <div class="soru">Her gün güneş koruyucu kullanıyor musunuz?</div>
+  <div class="secenek" id="gunes"></div>
+  <div class="soru">Renkli güneş koruyucu, BB krem ya da fondöten kullanır mısınız?</div>
+  <div class="secenek" id="renkli"></div>
+  <div class="soru">Makyaj yapıyor musunuz?</div>
+  <div class="secenek" id="makyaj"></div>
+  <div class="soru">Sigara kullanıyor musunuz? (isteğe bağlı)</div>
+  <div class="secenek" id="sigara"></div>
+  <div class="soru">Önümüzdeki 2 hafta içinde deniz/güneş tatili ya da bronzlaşma planınız var mı?</div>
+  <div class="secenek" id="tatil"></div>
+  <div class="soru">Cilt bakımınız için nasıl bir başlangıç istersiniz?</div>
+  <div class="secenek" id="butce"></div>
+</div>
+
+<div class="kart">
+  <h2>4. Güvenliğiniz için birkaç soru</h2>
+  <p class="alt">Bu sorular teşhis için değil; rutininizden size uygun olmayabilecek içerikleri çıkarmak için.</p>
+  <div class="soru">Hamile misiniz ya da emziriyor musunuz?</div>
+  <div class="secenek" id="gebelik"></div>
+  <div class="soru">Şu an kullandığınız ilaç ya da tedavi var mı? (birden çok seçebilirsiniz)</div>
+  <div class="secenek" id="ilac"></div>
+  <div class="soru">Son 6 hafta içinde yüzünüze bir işlem uygulandı mı? (birden çok seçebilirsiniz)</div>
+  <div class="secenek" id="islem"></div>
+  <div id="islemTarihKutu" class="gizli">
+    <div class="soru">En son işlemin tarihi (yaklaşık)</div>
+    <div class="secenek"><input type="date" id="islemTarih"> <label><input type="checkbox" id="islemTarihYok"> Hatırlamıyorum</label></div>
+  </div>
+  <div class="soru">Bilinen alerjiniz ya da tepki verdiğiniz içerik var mı?</div>
+  <div class="secenek" id="alerji"></div>
+  <div class="soru">Aşağıdakilerden biri var mı?</div>
+  <div class="secenek" id="kirmizi"></div>
+</div>
+
+<p class="bildirim gizli" id="b-form" role="alert"></p>
+<div class="butonlar">
+  <button type="button" onclick="hazirla()">Rutinimi hazırla</button>
+</div>
+</form>
+
+<section id="sonuc" class="gizli"></section>
+
+<div class="gizlilik" id="gizlilik">
+  <h2>Gizlilik</h2>
+  <ul>
+   <li>Cevaplarınız bu sayfanın kodu tarafından sunucuya gönderilmez, kalıcı depolamaya yazılmaz; rutininiz tarayıcınızda hesaplanır. Tarayıcınızın oturum geri yükleme özelliği form seçimlerinizi bir süre koruyabilir; sonuçların altındaki "Cevapları temizle" düğmesiyle formu sıfırlayabilirsiniz.</li>
+   <li>Bu sayfa çerez, ziyaret istatistiği ya da reklam aracı kullanmaz.</li>
+   <li>Sayfa GitHub Pages hizmetinde barındırılır. GitHub, ziyaretçilerin IP adreslerini güvenlik amacıyla kaydeder (GitHub Inc., ABD).</li>
+   <li>"Elif Hanım da baksın" düğmesine basarsanız WhatsApp (Meta) açılır ve şu sabit kısa mesaj hazırlanır: "Merhaba, Cildinin Hikâyesi testini kullandım. Rutinim hakkında bilgi almak istiyorum." Test cevaplarınız ve rutininiz bu mesaja eklenmez. Lütfen test cevaplarınızı, sonuç ekranının görüntüsünü veya sağlık bilgilerinizi bu mesajla paylaşmayın. Mesaj Elif Hanım'a ancak siz gönderirseniz ulaşır; gönderirseniz yazışma WhatsApp (Meta) üzerinden yürür ve sitemizdeki <a href="https://elifkayabeauty.com.tr/pages/gizlilik-politikasi" target="_blank" rel="noopener">Gizlilik ve KVKK metnine</a> tabidir.</li>
+  </ul>
+  <h2>Bu sayfa için kısa aydınlatma</h2>
+  <ul>
+   <li><b>Veri sorumlusu:</b> Elif Kaya (Elif Kaya Beauty), Rızaiye Mah. Şair Elmas Yıldırım Sk. No: 13, Merkez / Elazığ. E-posta: elifkayaguzellik@gmail.com. KEP: elif.kaya.23@hs03.kep.tr.</li>
+   <li><b>İşlenen veri:</b> Test cevaplarınız bize ulaşmaz. Sayfayı açtığınızda IP adresiniz, barındırma sağlayıcısı GitHub'ın sunucu kayıtlarına otomatik olarak işlenir.</li>
+   <li><b>Amaç:</b> Sayfanın güvenli biçimde sunulması. Bu kayıt, sayfanın size gösterilebilmesi için gerekli teknik bir işlemdir.</li>
+   <li><b>Hukuki sebep:</b> Site güvenliği için meşru menfaatimiz (KVKK m.5/2-f); sitemizin Gizlilik ve KVKK metnindeki site güvenliği maddesiyle aynıdır.</li>
+   <li><b>Yurt dışı:</b> GitHub Inc. ABD'de bulunan bir şirkettir; bu kayıtlar yurt dışında işlenir. Yurt dışında kişisel verileriniz Türkiye'deki ile aynı düzeyde korunmayabilir. Bu barındırma akışında KVKK'nın 9. maddesi kapsamındaki yurt dışına aktarım şartına ilişkin değerlendirme henüz tamamlanmamıştır.</li>
+   <li><b>Haklarınız:</b> KVKK'nın 11. maddesindeki haklarınızı (verinizin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltme, silme, itiraz ve diğerleri) yukarıdaki posta adresine, KEP adresine ya da e-posta adresine yazarak kullanabilirsiniz. Ayrıntılar: <a href="https://elifkayabeauty.com.tr/pages/gizlilik-politikasi" target="_blank" rel="noopener">Gizlilik ve KVKK</a> sayfası.</li>
+  </ul>
+</div>
+
+
+<p class="yasal">Tıbbi tavsiye değildir; kozmetik bakım önerisidir. Sonuçlar kişiden kişiye değişir.</p>
+</main>
+
+<script>
+const P = {"G1": {"n": "Genosys Snow O2 Cleanser", "t": "Temizleyici", "u": "https://elifkayabeauty.com.tr/genosys-snow-o2-cleanser---oksijen-kopuklu-yuz-temizleyici", "f": 3357, "s": true}, "G2": {"n": "Genosys Snow Booster Tonic (SBT)", "t": "Tonik (sprey)", "u": "https://elifkayabeauty.com.tr/genosys-snow-booster-tonic--sbt----sprey-tonik", "f": 2370, "s": true}, "G3": {"n": "Genosys Intensive Problem Control Toner", "t": "Tonik", "u": "https://elifkayabeauty.com.tr/genosys-intensive-problem-control-toner---dengeleyici-tonik", "f": 2765, "s": true}, "G4": {"n": "Genosys Microbiome Energy Infusing Mist", "t": "Yüz spreyi", "u": "https://elifkayabeauty.com.tr/genosys-microbiome-energy-infusing-mist---prebiyotik-yuz-spreyi", "f": 1580, "s": true}, "G5": {"n": "Genosys Moisture Replenishing Hyaluron Serum (MHS)", "t": "Serum", "u": "https://elifkayabeauty.com.tr/genosys-moisture-replenishing-hyaluron-serum--mhs----hyaluronik-asit-serumu", "f": 3160, "s": true}, "G6": {"n": "Genosys Problem Control Serum (PCS)", "t": "Serum", "u": "https://elifkayabeauty.com.tr/genosys-problem-control-serum--pcs----dengeleyici-serum", "f": 3160, "s": true}, "G7": {"n": "Genosys Multi Vita Radiance Serum (MVS)", "t": "Serum", "u": "https://elifkayabeauty.com.tr/genosys-multi-vita-radiance-serum--mvs----vitaminli-aydinlatici-serum", "f": 3160, "s": true}, "G8": {"n": "Genosys Multi Functional Serum (MFS)", "t": "Serum", "u": "https://elifkayabeauty.com.tr/genosys-multi-functional-serum--mfs----kirisiklik-karsiti-serum", "f": 3160, "s": true}, "G9": {"n": "Genosys Bio-Meso PDRN Homecare Ampoule 5000", "t": "Serum (ampul)", "u": "https://elifkayabeauty.com.tr/genosys-bio-meso-pdrn-homecare-ampoule-5000---pdrn-ampul", "f": 2370, "s": true}, "G10": {"n": "Genosys Eye Contour Serum", "t": "Göz çevresi serumu", "u": "https://elifkayabeauty.com.tr/genosys-eye-contour-serum---goz-cevresi-serumu", "f": 3950, "s": true}, "G11": {"n": "Genosys Eyecell Eye Contour Cream", "t": "Göz çevresi kremi", "u": "https://elifkayabeauty.com.tr/genosys-eyecell-eye-contour-cream---goz-cevresi-kremi", "f": 3950, "s": true}, "G12": {"n": "Genosys Eyecell Peptide Gel Patch", "t": "Göz altı bandı", "u": "https://elifkayabeauty.com.tr/genosys-eyecell-peptide-gel-patch---peptitli-goz-alti-jel-bandi", "f": 3950, "s": true}, "G13": {"n": "Genosys Moisture Replenishing Hyaluron Cream", "t": "Nemlendirici", "u": "https://elifkayabeauty.com.tr/genosys-moisture-replenishing-hyaluron-cream---nem-takviyeli-hyaluron-krem", "f": 3061, "s": true}, "G15": {"n": "Genosys Hydro Soothing Cream (HSC)", "t": "Nemlendirici (yatıştırıcı)", "u": "https://elifkayabeauty.com.tr/genosys-hydro-soothing-cream--hsc----nemlendirici-yatistirici-krem", "f": 3061, "s": true}, "G16": {"n": "Genosys Problem Control Cream (PCC)", "t": "Nemlendirici (yağsız)", "u": "https://elifkayabeauty.com.tr/genosys-problem-control-cream--pcc----dengeleyici-krem", "f": 3061, "s": true}, "G17": {"n": "Genosys Multi Vita Radiance Cream (MVC)", "t": "Nemlendirici (aydınlatıcı)", "u": "https://elifkayabeauty.com.tr/genosys-multi-vita-radiance-cream--mvc----vitaminli-aydinlik-krem", "f": 3061, "s": true}, "G18": {"n": "Genosys Multi Functional Anti-Wrinkle Cream (MFC)", "t": "Nemlendirici (yaşlanma karşıtı)", "u": "https://elifkayabeauty.com.tr/genosys-multi-functional-anti-wrinkle-cream--mfc----bakuchiollu-kirisiklik-karsiti-krem", "f": 3061, "s": true}, "G19": {"n": "Genosys Soothing Repair Postcream (SRP)", "t": "Bakım kremi (işlem sonrası)", "u": "https://elifkayabeauty.com.tr/genosys-soothing-repair-postcream--srp----yatistirici-bakim-kremi", "f": 1382, "s": true}, "G20": {"n": "Genosys Ultra Shield Sun Cream (USC) SPF 50+", "t": "Güneş koruyucu (renksiz)", "u": "https://elifkayabeauty.com.tr/genosys-ultra-shield-sun-cream--usc--spf-50----yuksek-korumali-gunes-kremi", "f": 3160, "s": true}, "G21": {"n": "Genosys Multi Sun Cream SPF 40 PA++", "t": "Güneş koruyucu (renksiz)", "u": "https://elifkayabeauty.com.tr/genosys-multi-sun-cream-spf-40-pa-----yatistirici-gunes-kremi", "f": 1975, "s": true}, "G22": {"n": "Genosys Blemish Balm Cream (BBC)", "t": "Renkli güneş koruyucu krem", "u": "https://elifkayabeauty.com.tr/genosys-blemish-balm-cream--bbc----renkli-gunes-koruyucu-krem", "f": 2765, "s": true}, "G23": {"n": "Genosys Revita Glow BB Cream SPF 38 PA+++", "t": "Renkli güneş koruyucu (BB)", "u": "https://elifkayabeauty.com.tr/genosys-revita-glow-bb-cream-spf-38-pa------isiltili-bb-krem", "f": 2765, "s": true}, "G24": {"n": "Genosys Skin Caring Blemish Balm Cushion", "t": "Renkli güneş koruyucu (kuşon)", "u": "https://elifkayabeauty.com.tr/genosys-skin-caring-blemish-balm-cushion---gunes-korumali-kuson-bb", "f": 4641, "s": true}, "G25": {"n": "Genosys Intensive Repair Collagen Mask", "t": "Yaprak maske", "u": "https://elifkayabeauty.com.tr/genosys-intensive-repair-collagen-mask---kolajenli-yaprak-maske", "f": 296, "s": true}, "G26": {"n": "Genosys Soothing Bomb Sea Algae Mask", "t": "Yaprak maske (yatıştırıcı)", "u": "https://elifkayabeauty.com.tr/genosys-soothing-bomb-sea-algae-mask---yatistirici-deniz-yosunu-maske", "f": 347, "s": true}, "G27": {"n": "Genosys EGF Repair Oxymask Cream", "t": "Krem maske (durulanmaz)", "u": "https://elifkayabeauty.com.tr/genosys-egf-repair-oxymask-cream---kopuren-oksijen-krem-maske", "f": 3357, "s": true}, "G28": {"n": "Genosys Skin Rescue Overnight Cream Mask", "t": "Gece maskesi", "u": "https://elifkayabeauty.com.tr/genosys-skin-rescue-overnight-cream-mask---gece-bakim-maskesi", "f": 3851, "s": true}, "G29": {"n": "Genosys Epi Turnover Boosting Peeling Gel", "t": "Enzim peeling jel", "u": "https://elifkayabeauty.com.tr/genosys-epi-turnover-boosting-peeling-gel---enzimli-peeling-jel", "f": 2271, "s": true}, "G30": {"n": "Genosys HR³ Matrix Medi Scalp Shampoo α", "t": "Saç derisi şampuanı", "u": "https://elifkayabeauty.com.tr/genosys-hr3-matrix-medi-scalp-shampoo-a---sac-derisi-bakim-sampuani", "f": 2863, "s": true}, "G31": {"n": "Genosys HR³ Matrix Carboxy Scalp Refresher α", "t": "Saç derisi köpük spreyi", "u": "https://elifkayabeauty.com.tr/genosys-hr3-matrix-carboxy-scalp-refresher-a---kopuklu-sac-derisi-spreyi", "f": 2567, "s": true}, "G32": {"n": "Genosys Güneş Koruyucu Sürme Pufu", "t": "Aksesuar", "u": null, "f": 493, "s": true}, "T1": {"n": "Theraderm Lotus Cleanser", "t": "Temizleyici", "u": "https://elifkayabeauty.com.tr/theraderm-lotus-cleanser---lotus-ozlu-yuz-temizleyici", "f": 2180, "s": true}, "T2": {"n": "Theraderm Lypoaran Exo Ampoule Serum", "t": "Serum (çift hazne)", "u": "https://elifkayabeauty.com.tr/theraderm-lypoaran-exo-ampoule-serum---alfa-lipoik-asitli-eksozom-serum", "f": 5451, "s": true}, "T4": {"n": "Theraderm CC Exo Ampoule Serum", "t": "Serum (çift hazne)", "u": "https://elifkayabeauty.com.tr/theraderm-cc-exo-ampoule-serum---saf-c-vitaminli-eksozom-serum", "f": 4550, "s": true}, "T5": {"n": "Theraderm CC Exo Couple Cream", "t": "Nemlendirici", "u": "https://elifkayabeauty.com.tr/theraderm-cc-exo-couple-cream---c-vitaminli-eksozom-krem", "f": 3792, "s": true}, "T6": {"n": "Theraderm YES Cream", "t": "Nemlendirici (koruyucu)", "u": "https://elifkayabeauty.com.tr/theraderm-yes-cream---probiyotikli-koruyucu-krem", "f": 3697, "s": true}, "M1": {"n": "Mesosys Cellthera Pure Foam Cleanser", "t": "Temizleyici (köpük)", "u": "https://elifkayabeauty.com.tr/mesosys-cellthera-pure-foam-cleanser---kopuk-temizleyici", "f": 1137, "s": true}, "M2": {"n": "Mesosys Cellthera Sun Protection Cream", "t": "Güneş koruyucu (şeffaf)", "u": "https://elifkayabeauty.com.tr/mesosys-cellthera-sun-protection-cream---seffaf-gunes-kremi", "f": 1469, "s": true}, "M3": {"n": "Mesosys Cellthera Sun Protection Tinted Cream", "t": "Renkli güneş koruyucu", "u": "https://elifkayabeauty.com.tr/mesosys-cellthera-sun-protection-tinted-cream---renkli-gunes-kremi", "f": 1516, "s": true}, "M4": {"n": "Mesosys Cellthera Moisture Recharging Cream", "t": "Nemlendirici", "u": "https://elifkayabeauty.com.tr/mesosys-cellthera-moisture-recharging-cream---deniz-yosunlu-nem-kremi", "f": 1137, "s": true}, "V1": {"n": "Vagheggi Equilibrium Cleansing Phytogel", "t": "Temizleyici (yüz ve vücut)", "u": "https://elifkayabeauty.com.tr/vagheggi-equilibrium-cleansing-phytogel---bitkisel-temizleme-jeli", "f": 1185, "s": true}, "V2": {"n": "Vagheggi 75.25 Longevity Double Cleanser", "t": "Temizleyici (çift aşama: krem + jel)", "u": "https://elifkayabeauty.com.tr/vagheggi-75-25-longevity-double-cleanser---cift-asamali-temizleyici", "f": 3033, "s": true}, "V3": {"n": "Vagheggi Equilibrium Eye And Lip Make Up Remover", "t": "Göz-dudak makyaj temizleyici", "u": "https://elifkayabeauty.com.tr/vagheggi-equilibrium-eye-and-lip-make-up-remover---cift-fazli-goz-ve-dudak-makyaj-temizleyici", "f": 853, "s": true}, "V8": {"n": "Vagheggi 75.25 Longevity Melt-In Scrub", "t": "Şekerli peeling", "u": "https://elifkayabeauty.com.tr/vagheggi-75-25-longevity-melt-in-scrub---eriyen-sekerli-peeling", "f": 2464, "s": true}, "V9": {"n": "Vagheggi Equilibrium Geopeel Scrub", "t": "Kil içerikli peeling maske", "u": "https://elifkayabeauty.com.tr/vagheggi-equilibrium-geopeel-scrub---arindirici-peeling-maske", "f": 1848, "s": true}, "P1": {"n": "pHformula EXFO Cleanse", "t": "Temizleyici (enzimli jel krem)", "u": "https://elifkayabeauty.com.tr/phformula-exfo-cleanse---enzimli-jel-krem-temizleyici", "f": 1738, "s": true, "fb": "100 ml"}, "P2": {"n": "pHformula EXFO Cleanse Limited Edition", "t": "Temizleyici (silikon fırça başlıklı, 100 ml)", "u": "https://elifkayabeauty.com.tr/phformula-exfo-cleanse-limited-edition---firca-baslikli-temizleyici", "f": 2350, "s": true}, "P3": {"n": "pHformula POWER Essence Tonic", "t": "Tonik (sprey serum tonik)", "u": "https://elifkayabeauty.com.tr/phformula-power-essence-tonic---sprey-serum-tonik", "f": 2275, "s": true}, "P4": {"n": "pHformula VITA B3 Cream", "t": "Nemlendirici", "u": "https://elifkayabeauty.com.tr/phformula-vita-b3-cream---niasinamidli-nemlendirici-krem", "f": 3081, "s": true}, "P5": {"n": "pHformula VITA A Rejuvenating Mask", "t": "Durulanan maske (retinollü)", "u": "https://elifkayabeauty.com.tr/phformula-vita-a-rejuvenating-mask---retinollu-yenileyici-maske", "f": 2133, "s": true}, "P6": {"n": "pHformula VITA B3 Vibrance Boost Mask", "t": "Durulanan nem maskesi", "u": "https://elifkayabeauty.com.tr/phformula-vita-b3-vibrance-boost-mask---niasinamidli-nem-maskesi", "f": 2133, "s": true}, "P7": {"n": "pHformula VITA C Bright Overnight Mask", "t": "Gece maskesi (durulanmaz)", "u": "https://elifkayabeauty.com.tr/phformula-vita-c-bright-overnight-mask---c-vitaminli-gece-maskesi", "f": 2133, "s": true}, "P8": {"n": "pHformula POST Recovery Cream", "t": "Bakım kremi (işlem sonrası)", "u": "https://elifkayabeauty.com.tr/phformula-post-recovery-cream---bakim-sonrasi-nemlendirici-krem", "f": 2275, "s": true}, "P9": {"n": "pHformula POST Recovery Plus", "t": "Nemlendirici (zengin, yoğun)", "u": "https://elifkayabeauty.com.tr/phformula-post-recovery-plus---yogun-nemlendirici-krem", "f": 1990, "s": true}, "P10": {"n": "pHformula SOS Repair Cream", "t": "Nemlendirici (bariyer)", "u": "https://elifkayabeauty.com.tr/phformula-sos-repair-cream---kuru-ciltler-icin-bariyer-kremi", "f": 2180, "s": true}, "P11": {"n": "pHformula EYE Recovery", "t": "Göz çevresi kremi", "u": "https://elifkayabeauty.com.tr/phformula-eye-recovery---peptitli-goz-cevresi-kremi", "f": 3649, "s": true}, "P12": {"n": "pHformula SOS Rescue Oil", "t": "Bakım yağı", "u": "https://elifkayabeauty.com.tr/phformula-sos-rescue-oil---bariyer-destekleyici-bakim-yagi", "f": 3981, "s": true}, "P13": {"n": "pHformula MELA Concentrated Corrective Serum", "t": "Serum (leke görünümü)", "u": "https://elifkayabeauty.com.tr/phformula-mela-concentrated-corrective-serum---aydinlatici-serum", "f": 5024, "s": true}, "P14": {"n": "pHformula HYDRA Concentrated Corrective Serum", "t": "Serum (nem)", "u": "https://elifkayabeauty.com.tr/phformula-hydra-concentrated-corrective-serum---nem-serumu", "f": 5356, "s": true}, "P15": {"n": "pHformula EYE Lift Serum", "t": "Göz çevresi serumu (metal roll-on)", "u": "https://elifkayabeauty.com.tr/phformula-eye-lift-serum---roll-on-goz-cevresi-serumu", "f": 2180, "s": true}};
+const YAYIN=true;
+
+const AYAR = {
+  gebelikteM3: false,
+  butceToplam: { temel: 15000, orta: 25000, tam: null },
+  islemGun: { hafif: 2, agda: 7, igne: 7, guclu: 42, lazer: 42, diger: 42 },
+  pcsNot: 'G6: sitedeki niasinamid ve ACZERO/PORE LASER ifadeleri akademinin içerik listesinde yok; kutudan teyit bekleniyor. Rutin kuralını etkilemez (v4 bölüm 6, madde 4).'
+};
+
+const SIKAYET = {leke:"Leke / eşit olmayan ton", kizariklik:"Kızarıklık", hassasiyet:"Hassasiyet", kuruluk:"Kuruluk", nemsizlik:"Nemsizlik / gerginlik", kirisiklik:"Kırışıklık / ince çizgi", elastikiyet:"Sıkılık kaybı / sarkma görünümü", yaglanma:"Yağlanma / parlama", akne:"Sivilceye eğilim", gozenek:"Belirgin gözenek", gozalti:"Göz altı", mat:"Mat, cansız görünüm"};
+const TIP = {kuru:"Kuru",normal:"Normal",karma:"Karma (T bölgesi yağlı)",yagli:"Yağlı",hassas:"Hassas"};
+const YAS = {alt18:"18 altı","18-29":"18-29","30-44":"30-44","45-59":"45-59","60+":"60 ve üstü"};
+const GUNES = {evet:"Evet",bazen:"Bazen",hayir:"Hayır"};
+const EVETHAYIR = {evet:"Evet",hayir:"Hayır"};
+const TATIL = {hayir:"Hayır", plan:"Evet, planım var", bronz:"Şu an bronzum (son 3 haftada bronzlaştım)"};
+const BUTCE = {temel:"15.000 TL'ye kadar: temel ürünlerle başlamak istiyorum", orta:"15.000 - 25.000 TL: günlük rutinin tamamı, haftalık bakım az", tam:"Fark etmez: önerilen rutinin tamamı"};
+const GEBELIK = {hayir:"Hayır",evet:"Evet (hamile ya da emziriyorum)"};
+const ILAC = {yok:"Yok", izotretinoin:"Akne ilacı (izotretinoin)", cilt:"Başka cilt ilacı (sürülen ya da içilen)", kan:"Kan sulandırıcı", hormon:"Hormon tedavisi / doğum kontrol hapı", hastalik:"Doktorun takip ettiği cilt durumu (egzama, sedef, rozasea...)"};
+const ISLEM = {yok:"Hayır", hafif:"Salon cilt bakımı ya da hafif peeling", agda:"Yüz ağdası ya da tüy dökücü", igne:"İğneli işlem (mezoterapi, dolgu, botoks, dermapen)", lazer:"Lazer ya da IPL", guclu:"Güçlü (derin) kimyasal peeling", diger:"Başka bir işlem / emin değilim"};
+const ALERJI = {yok:"Yok", lavanta:"Lavanta", okaliptus:"Okaliptus", caytree:"Çay ağacı", narenciye:"Narenciye (portakal, greyfurt, limon...)", propolis:"Propolis / arı ürünü", salyangoz:"Salyangoz", balik:"Balık", soya:"Soya", papaya:"Papaya", papatya:"Papatyagiller", hindistan:"Hindistan cevizi", badem:"Badem / susam", yosun:"Deniz yosunu", parfum:"Parfüm / koku", salisilat:"Aspirin / salisilat", aloe:"Aloe vera"};
+const KIRMIZI = {yok:"Hiçbiri", ben:"Şekli ya da rengi değişen ben", yara:"Kanayan ya da iyileşmeyen yara", kistik:"Ağrılı, derin (kistik) sivilceler", dokuntu:"Ani ve yaygın döküntü", surekli:"Sürekli kızarıklık, yanma ya da batma"};
+
+const TEMEL = {
+  kuru:  {T:['P1','T1'], To:['P3','G2'], S:['P14','G5'], N:['P10','G13'], GK:['G20','G21'], aksamYag:true,
+          notlar:['Çok kuru ciltte nemlendirici olarak P9 da kullanılabilir.','Pullanma ya da hassaslaşma varsa temizleyicide T1 önce gelir.']},
+  normal:{T:['G1','P1'], To:['G2','P3'], S:['G5','P14'], N:['G13','P4'], GK:['G21','G20']},
+  karma: {T:['G1','P1'], To:['G2'], S:['G6','G5'], N:['G16'], GK:['G21','M2','G20'],
+          notlar:['Akşam isteğe bağlı: G3 yalnız T bölgesine.','Yanaklar gerginse yanaklara G5; yanaklar kuru ya da gerginse yanaklara G13; tek krem isteyene P4.','Çok yağlı ya da tıkalı T bölgesinde temizleyicide P1 önce gelir.']},
+  yagli: {T:['G1','P1'], To:['G2'], ToAksam:['G3','G2'], S:['G6','G5'], N:['G16','P8'], GK:['G21','M2','G20'],
+          notlar:['Çok yağlı, kalın ya da tıkalı görünümde temizleyicide P1 önce gelir.']},
+  hassas:{T:['M1','T1'], To:['P3','G2'], S:['P14','G5'], N:['P4','G15','T6'], GK:['M2','G21'], gunici:['G4'],
+          cikar:['G3','G27','P7','P5','G29','V8','V9'],
+          notlar:['P3 ilk kullanımda hafif karıncalanma hissi verebilir. Yanma, batma ya da kızarıklık olursa kullanmayı bırakın; sürerse dermatoloğa danışın.']}
+};
+const st=(k,u,e,ek)=>Object.assign({k,u:u||null,e:e||'a'},ek||{});
+const H=(id,sik,e,ek)=>Object.assign({id,sik,e:e||'a'},ek||{});
+const SL=(...h)=>({l:h}), EK=(...h)=>({l:h,ek:true});
+const KURAL = {
+ leke:{hedef:'daha eşit görünen cilt tonu', kart:'K-SIK-LEKE-01', renkliOnerilir:true,
+  sabah:[st('T'),st('To'),st('S',['G7','P13','T2'],'a',{tip:{yagli:['G6','G7']}}),st('N',['G17','P4'],'a',{tip:{yagli:['G16']}}),st('GK',['G20'],'a',{ad:'Güneş koruyucu (renksiz, son adım; leke rutininde şart)'})],
+  aksam:[st('T'),st('To'),st('S',['G7','P13','T2'],'a',{nazik:['P13']}),st('N',['G17','P4'],'a',{tip:{yagli:['G16']}})],
+  haftalik:[SL(H('G29','haftada 1, en çok 2'),H('P7','haftada 1; cildiniz rahatsa haftada 2-3; akşam son adım')), EK(H('P5','rutine başladıktan sonraki ilk 6 hafta bu maskeyi kullanmayın. Sonrasında en çok 15 günde 1 akşam kullanın',null,{guclu:true}))]},
+ kizariklik:{hedef:'daha sakin ve rahat görünen cilt', kart:'K-SIK-KIZARIK-01', nazik:true, renkliOnerilir:true,
+  sabah:[st('T'),st('To',['P3','G2']),st('S',['P14','G5']),st('N',['P4','G15']),st('GK',['M2','G21'])],
+  aksam:[st('T'),st('To',['P3','G2']),st('S',['P14','G5'],'a',{not:'Haftada 1-2 akşam serum yerine P12 3-5 damla kullanılabilir.'}),st('N',['P4','G15'])],
+  gunici:['G4','P3'],
+  haftalik:[SL(H('P6','haftada 1'),H('G26','haftada 1, en çok 2'))],
+  cikar:['G29','V8','V9','G3','G6','G7','T2','T4','P5','G27','P7','P1','G19'],
+  notlar:['Kuru ve soğukta kızaran ciltte krem olarak M4 de kullanılabilir.']},
+ hassasiyet:{hedef:'kolay tepki veren ciltlere nazik bakım', kart:'K-SIK-HASSAS-01', nazik:true,
+  sabah:[st('T'),st('To',['P3','G2']),st('S',['P14','G5']),st('N',['P4','G15']),st('GK',['M2','G21'])],
+  aksam:[st('T'),st('To',['P3','G2']),st('S',['P14','G5']),st('Y',['P12'],'a',{sadeceTip:['kuru']}),st('N',['P4','P10'],'a',{tip:{kuru:['P10','P4']}})],
+  haftalik:[SL(H('P6','haftada 1'),H('G26','haftada 1, en çok 2'))],
+  cikar:['G29','V8','V9','G3','G6','G7','T2','T4','P5','G27','P7','P1','G19','V1'],
+  notlar:['Yeni ürünleri tek tek ekleyin; her birini birkaç gün deneyip sonra yenisine geçin.']},
+ kuruluk:{hedef:'beslenmiş, yumuşak his', kart:'K-SIK-KURU-01',
+  sabah:[st('T'),st('To',['P3','G2']),st('S',['P14','G5']),st('N',['P10'],'a',{tip:{yagli:['G13'],karma:['G13']}}),st('GK')],
+  aksam:[st('T'),st('To'),st('S',['P14','G5']),st('Y',['P12'],'a',{sadeceTip:['kuru','normal','hassas']}),st('N',['P10','P9'],'a',{tip:{yagli:['G13'],karma:['G13']}})],
+  haftalik:[SL(H('P7','haftada 1; cildiniz rahatsa haftada 2-3; akşam son adım'),H('G28','haftada 1-2'))],
+  notTip:{yagli:['Kremi yalnız kuru bölgelere uygulayın.'],karma:['Kremi yalnız kuru bölgelere uygulayın.']},
+  notlar:['Çok kuru ya da gergin ciltte sabah kremi olarak P9 da kullanılabilir.']},
+ nemsizlik:{hedef:'dolgun ve nemli görünüm', kart:'K-SIK-NEM-01',
+  sabah:[st('T'),st('To',['G2','P3']),st('S',['G5','P14']),st('N',['G13'],'a',{tip:{yagli:['G16','M4']}}),st('GK')],
+  aksam:[st('T'),st('To'),st('S',['G5','P14']),st('N',['G13','M4'],'a',{tip:{yagli:['G16','M4']}})],
+  gunici:['P3','G4'],
+  haftalik:[SL(H('G25','haftada 1-2'),H('P6','haftada 1'))]},
+ kirisiklik:{hedef:'ince çizgi görünümünde yumuşama', kart:'K-SIK-KIRISIK-01',
+  sabah:[st('T'),st('To'),st('S',['G8']),st('N',['G18'],'a',{tip:{yagli:['G16']}}),st('GK',['G20'])],
+  aksam:[st('T'),st('To'),st('S',['G8']),st('Y',['P12'],'a',{sadeceTip:['kuru'],ad:'Bakım yağı (2-3 damla, serumdan sonra kremden önce)'}),st('GC',['P11','G11'],'a',{opt:true,ad:'Göz çevresi kremi (isteğe bağlı)'}),st('N',['G18'],'a',{tip:{yagli:['G16'],kuru:['P9','G18']}})],
+  haftalik:[SL(H('P5','haftada 1; 3-4 hafta sorunsuz geçerse en çok haftada 2',null,{guclu:true})), SL(H('G28','haftada 1-2'),H('G9','isteğe bağlı, haftada 1','m'))],
+  notlar:['Günlük adımda retinollü ürün yok; G8 ve G18 bakuchiol içerir.']},
+ elastikiyet:{hedef:'daha sıkı ve esnek görünüm', kart:'K-SIK-SIKILIK-01',
+  sabah:[st('T'),st('To'),st('S',['G8','T4'],'a',{tip:{hassas:['G8']}}),st('N',['G18'],'a',{seri:{T4:['T5']}}),st('GK',['G20'])],
+  aksam:[st('T'),st('To'),st('S',['G8']),st('Y',['P12'],'a',{opt:true}),st('GS',['P15','P11'],'a',{opt:true,ad:'Göz çevresi (isteğe bağlı)'}),st('N',['G18'],'a',{tip:{kuru:['P9','G18']}})],
+  haftalik:[SL(H('P5','haftada 1; cildiniz rahatsa en çok haftada 2',null,{guclu:true})), SL(H('G9','isteğe bağlı, haftada 1 (ayrı akşam)','m'))]},
+ yaglanma:{hedef:'daha dengeli, az parlayan görünüm', kart:'K-SIK-YAG-01',
+  sabah:[st('T',['G1']),st('To',['G2']),st('S',['G6','G5'],'a',{not:'2-3 damla'}),st('N',['G16']),st('GK',['G21','M2'])],
+  aksam:[st('T',['G1']),st('To',['G3','G2']),st('S',['G6','G5'],'a',{not:'2-3 damla'}),st('N',['G16'])],
+  haftalik:[SL(H('G3','ped kompres yalnız yağlanan bölgeye 5-10 dk; haftada 1, en çok 2','a',{guclu:true,ad:'Tonik ped kompres'}),H('V9','haftada 1','m',{guclu:true}))],
+  cikar:['P9','P10','P12'], notlar:['Nemlendiriciyi atlamayın.']},
+ akne:{hedef:'sivilceye eğilimli ciltler için dengeleyici bakım', kart:'K-SIK-AKNE-01',
+  sabah:[st('T',['G1']),st('To',['G2']),st('S',['G6','G5']),st('N',['G16']),st('GK',['G21'])],
+  aksam:[st('T',['G1']),st('To',['G3','G2']),st('S',['G6','G5']),st('N',['G16'],'a',{not:'Kızarık görünüm belirginse nemlendirici olarak P4.'})],
+  haftalik:[SL(H('G3','bölgesel ped kompres 5-10 dk; haftada 1, en çok 2','a',{guclu:true,ad:'Tonik ped kompres'}),H('P6','kızarık görünümlü bölgeler için haftada 1'))],
+  cikar:['V8','V9','P9'],
+  notlar:['Çok yağlı, kalın ya da tıkalı görünen ciltte temizleyici olarak P1 de kullanılabilir.','Derin, yaygın ya da iz bırakan sivilcelerde ürün yerine dermatoloğa başvurun.']},
+ gozenek:{hedef:'daha az belirgin gözenek görünümü', kart:'K-SIK-GOZENEK-01',
+  sabah:[st('T',['G1']),st('To',['G2','P3']),st('S',['G6'],'a',{tip:{kuru:['P14','G5'],hassas:['P14','G5']}}),st('N',['G16'],'a',{tip:{kuru:['G13'],normal:['G13']}}),st('GK')],
+  aksam:[st('T',['G1','P1']),st('To',['G2','P3'],'a',{tip:{yagli:['G3','G2']}}),st('S',['G6']),st('N',['G16','G13'],'a',{tip:{kuru:['G13'],normal:['G13']}})],
+  haftalik:[SL(H('G29','haftada 1, en çok 2'),H('P6','haftada 1'))],
+  hTip:{kuru:[SL(H('P6','haftada 1'),H('G29','haftada 1, en çok 2'))]}},
+ gozalti:{hedef:'dinç ve aydınlık görünen göz çevresi', kart:'K-SIK-GOZALTI-01', gozEk:true,
+  sabah:[st('T'),st('To'),st('S'),st('GS',['G10','P15'],'a',{ad:'Göz serumu'}),st('GC',['G11','P11'],'a',{ad:'Göz kremi'}),st('N'),st('GK')],
+  aksam:[st('T'),st('To'),st('S'),st('GS',['G10','P15'],'a',{ad:'Göz serumu'}),st('GC',['G11','P11'],'a',{ad:'Göz kremi'}),st('N')],
+  haftalik:[SL(H('G12','göz serumundan sonra, göz kreminden önce 15-20 dakika. Başlangıçta haftada 3; sonraki haftalarda haftada 2\'ye, ardından haftada 1\'e azaltın'))],
+  notlar:['Şişkinlik ya da yorgun görünüm baskınsa göz serumu olarak P15 (içten dışa), ardından P11 (üst kapak dahil).','Göz makyajını ovalamadan temizleyin.']},
+ mat:{hedef:'canlı ve ışıltılı görünüm', kart:'K-SIK-MAT-01', renkliMat:true,
+  sabah:[st('T'),st('To',['P3','G2']),st('S',['G7'],'a',{tip:{kuru:['T4','G7']}}),st('N',['G17']),st('GK')],
+  aksam:[st('T'),st('To'),st('S',['G7']),st('N',['G17','G27'])],
+  haftalik:[SL(H('G29','haftada 1'),H('P7','haftada 1-2')), SL(H('G28','isteğe bağlı, haftada 1-2'))],
+  hTip:{kuru:[SL(H('P7','haftada 1-2'),H('G29','haftada 1')), SL(H('G28','isteğe bağlı, haftada 1-2'))]}}
+};
+const HAFTALIK_URUN=new Set(Object.values(KURAL).flatMap(r=>[...(r.haftalik||[]),...Object.values(r.hTip||{}).flat()]).flatMap(sl=>sl.l.map(h=>h.id)));
+const YUVA_AD={MK:'Makyaj temizliği',T:'Temizleyici',To:'Tonik',S:'Serum',NS:'Nem serumu (isteğe bağlı)',Y:'Bakım yağı (3-5 damla, serumdan sonra kremden önce)',GS:'Göz serumu',GC:'Göz kremi',IU:'İşlem sonrası bakım kremi',N:'Nemlendirici',GK:'Güneş koruyucu (renksiz, son adım)',R:'Renkli katman (renksizin üstüne)'};
+const SIRA_K={MK:0,T:1,To:2,S:3,NS:4,Y:5,GS:6,GC:7,IU:8,N:9,GK:10,R:11};
+const SAYILAN=new Set(['T','To','S','NS','Y','IU','N','GK']);
+const AKTIF=new Set(['G6','G7','G8','T2','T4','P13']), NEM=new Set(['G5','P14']);
+const YEDEK={T:['G1','M1','T1'], N:['G13','P4','G15','T6','G16','M4'], GK:['G20','G21','M2']};
+const BIRLIKTE=[
+ ['G3, G6, peeling (G29, V8, V9), T4, G7, P13 ya da P5 kullanılan rutinde sabah güneş koruyucu şart (zaten her sabah var).','m'],
+ ['Bir akşam yalnız bir güçlü haftalık ürün: peeling ya da P5 ya da G3 kompres ya da P1 maske. O akşam aktif serum atlanır; nem serumu ve sade krem kalır.','a'],
+ ['Nem/yatıştırma maskeleri (P6, G25, G26, G28, P7) güçlü haftalık ürünle aynı akşam değil; haftada en çok 2 bakım akşamı (başlangıçta 1).','g'],
+ ['En çok 1 aktif serum (G6, G7, G8, T2, T4, P13) + isteğe bağlı 1 nem serumu (G5, P14). Ton serumları (G7, T2, T4, P13) üst üste değil.','a'],
+ ['P12 bakım yağı: serumdan sonra, kremden önce; serum sayılmaz; G3 ya da P5 kullanılan akşam yok.','a'],
+ ['T4 ile G3 aynı seansta değil; biri sabah biri akşam.','g'],
+ ['V2 kullanılan akşam P1 ikinci temizleyici değil.','g'],
+ ['G9, G28, P5, P7 aynı akşam değil. G9 tahriş olmuş cilde uygulanmaz.','m'],
+ ['P5 10-15 dk uygulanıp ılık suyla durulanır; yüz kurulandıktan yaklaşık 15 dk sonra P4 ya da P8 (P10).','a'],
+ ['G3 kompres en çok 10 dk; kızarık/kılcal görünümlü bölgeye yok.','a'],
+ ['Seri eşleşmeleri korunur: G5+G13, G6+G16, G7+G17, G8+G18, T4+T5; P14/P13 üstüne P4/P8/P10.','a'],
+ ['Renkli ürün renksiz güneş koruyucunun üstüne ikinci katmandır; yerine geçmez.','e']
+];
+
+const ALERJI_URUN={lavanta:['G19'],okaliptus:['G27','M3','T5'],caytree:['G3','M1'],narenciye:['P7','M1','G2','G25'],propolis:['G8','G18'],salyangoz:['G15'],balik:['G27','G9'],soya:['G21','G25','T5'],papaya:['G29','V2','P1','P2'],papatya:['G23','M4','V9','G19'],hindistan:['T1','V2','G5','M1'],badem:['P12'],yosun:['G26','M4','P12','T5'],parfum:['V1','P7'],salisilat:['G3','G6','G31'],aloe:['G13','G15','V3']};
+const ILAC_LISTE=['G3','G6','G7','T2','T4','P13','P5','P1','P2','G29','V8','V9','G9','P7'];
+const SUZGEC={
+ gebelik:{kesin:['P5','G3','G6','G11','G23','G31'], temkinli:['G8','G18','P11','G10','G12','G22','M3','T2','P13','G9','G27','G28','G29','V8','V9'], kalir:['G2','M1','P1','P2','P8','G5','G13','P15'],
+   uyari:'Gebelik ve emzirme döneminde bazı içerikler önerilmez; rutininiz buna göre sadeleştirildi. Başlamadan önce ürünlerin içerik listesini doktorunuza gösterin.', destekYok:true, kart:'K-GUV-GEBE-01', e:'e'},
+ izotretinoin:{cikar:ILAC_LISTE, uyari:'Kullandığınız ilaç cildinizi hassaslaştırabilir. Bu rutine ve yeni ürünlere başlamadan önce doktorunuza danışın. Peeling, ağda ya da başka bir cilt işlemi yaptırmadan önce de doktorunuza danışın.', destekYok:true, kart:'K-GUV-ILAC-01', e:'a'},
+ cilt:{cikar:ILAC_LISTE, uyari:'Kullandığınız ilaç cildinizi hassaslaştırabilir. Bu rutine ve yeni ürünlere başlamadan önce doktorunuza danışın. Peeling, ağda ya da başka bir cilt işlemi yaptırmadan önce de doktorunuza danışın.', destekYok:true, kart:'K-GUV-ILAC-01', e:'a'},
+ kan:{cikar:['V8','V9'], uyari:'Kan sulandırıcı kullanırken bu rutine ve özellikle takviyelere başlamadan önce doktorunuza danışın.', destekYok:true, kart:'K-GUV-KAN-01', e:'g'},
+ hormon:{cikar:['G31'], uyari:'Hormon tedavisi sırasında cilt daha kolay leke eğilimi gösterebilir; güneş korumasına özen gösterin ve rutininiz için doktorunuza danışın.', destekYok:true, gkOne:'G20', kart:'K-GUV-HORMON-01', e:'a'},
+ hastalik:{cikar:[...ILAC_LISTE,'G8','G18'], uyari:'Doktorunuzun takip ettiği cilt durumu olan bölgeye bu rutindeki ürünleri uygulamayın. Sade rutin de kişisel uygunluk onayı değildir; yeni ürünleri doktorunuza danışarak ekleyin.', destekYok:true, sade:true, kart:'K-GUV-HASTALIK-01', e:'a'},
+ islem:{cikar:['G3','G6','G7','T2','T4','P13','P5','P1','P2','G29','V8','V9','G9','P7'], uyari:'İşlem sonrası dönemde, işlemi yapan uzmanın önerisine uyun.', kart:'K-GUV-ISLEM-01', e:'e',
+   ilk:{lazer:['P10','P8','G19'], hafif:['P8','P10','G19'], diger:['G19','P8','P10']}, sira:['lazer','guclu','diger','igne','agda','hafif']},
+ tatil:{cikar:['G3','G6','P1','P2','G29','V8','V9','P5','P7','T4','G7','P13','T2'], uyari:'Tatil ve bronzlaşma döneminde cildinizi yormamak için rutininiz sadeleştirildi. Güneş koruyucuyu 2-3 saatte bir ve yüzme/terleme sonrası yenileyin.', kart:'K-GUNES-02', e:'e'},
+ yas18:{uyari:'18 yaşından küçükseniz rutine ebeveyniniz ya da yasal temsilcinizle birlikte karar verin.', destekYok:true, kart:'K-GUV-YAS-01', e:'e',
+   T:{kuru:['T1'],normal:['G1'],karma:['G1'],yagli:['G1'],hassas:['M1']}, N:{kuru:['G13'],normal:['G13'],hassas:['G13','P4'],karma:['G16'],yagli:['G16']}, GK:{kuru:['G21'],normal:['G21'],karma:['G21'],yagli:['G21'],hassas:['M2']}},
+ alerji:{uyari:'Bilinen alerjinizi içeren ürünü küçük alanda da denemeyin; içeriğinden emin olmadığınız ürünü kullanmadan önce içerik listesini kontrol edin.', salisilatEk:'Söğüt kabuğu gibi doğal salisilat kaynakları da rutininizden çıkarıldı.', kart:'K-GUV-ALERJI-01', e:'e'},
+ kirmizi:{uyari:'Anlattığınız durum kozmetik bakımın dışında. Lütfen bir dermatoloğa başvurun.', acil:'Döküntüye nefes almada güçlük, dil ya da boğazda şişme veya baygınlık eşlik ediyorsa hemen 112\'yi arayın.', kistik:'Ağrılı, derin ya da iz bırakan sivilceler için dermatoloğa başvurun.', kart:'K-GUV-KIRMIZI-01', e:'a'}
+};
+const NAZIK_T={kuru:['T1'],normal:['G1'],karma:['G1'],yagli:['G1'],hassas:['M1']};
+const KULLANIM={
+ P5:'O akşam serum ve krem yerine: temiz yüze ince tabaka sürün, 10-15 dakika sonra ılık suyla tamamen durulayın; yüzünüzü kuruladıktan yaklaşık 15 dakika sonra P4 ya da P8 sürün. O akşam bakım yağı kullanmayın.'
+};
+const GUCLU=new Set(['G29','V8','V9','P5','G3']);
+const BIRLIKTE_MUSTERI=[
+ {k:v=>v.has('P12')&&(v.has('P5')||v.has('G3')), m:'G3 ya da P5 kullandığınız akşam P12 kullanmayın.'},
+ {k:v=>v.has('T4')&&v.has('G3'), m:'T4 ile G3 aynı seansta kullanılmaz; biri sabah, biri akşam.'},
+ {k:(v,b,hft)=>hft.has('G3'), m:'G3 kompresini en çok 10 dakika uygulayın; kızarık ya da kılcal damar görünümlü bölgelere uygulamayın.'},
+ {k:v=>v.has('G9'), m:'G9 tahriş olmuş cilde uygulanmaz.'}
+];
+const DESTEK=[
+ {ad:'D vitamini', hep:true, m:'D vitamini düzeyinizi kontrol ettirin, doktorunuza veya eczacınıza danışın.'},
+ {ad:'Su ve uyku', s:['mat','gozalti','nemsizlik'], m:'Yeterli su ve düzenli uyku, cildin genel görünümünü destekleyen alışkanlıklardır.', takviyeDegil:true},
+ {ad:'Güneş alışkanlığı', s:['leke','kirisiklik'], m:'Öğle saatlerinde doğrudan güneşten kaçınmak ve şapka kullanmak bakımı destekler.', takviyeDegil:true},
+ {ad:'Sigara', s:['mat','kirisiklik'], sigara:true, m:'Sigaranın cilt görünümüne etkileri hakkında doktorunuzdan bilgi alabilirsiniz.', takviyeDegil:true}
+];
+
+function grup(id, sec, tip, ad){
+  const el=document.getElementById(id);
+  el.innerHTML=Object.entries(sec).map(([k,v])=>`<label><input type="${tip}" name="${ad}" value="${k}"> ${v}<span class="sira gizli"></span></label>`).join('');
+}
+grup('sikayetler',SIKAYET,'checkbox','sikayet'); grup('tip',TIP,'radio','tip'); grup('yas',YAS,'radio','yas');
+grup('gunes',GUNES,'radio','gunes'); grup('renkli',EVETHAYIR,'radio','renkli'); grup('makyaj',EVETHAYIR,'radio','makyaj'); grup('sigara',EVETHAYIR,'radio','sigara');
+grup('tatil',TATIL,'radio','tatil'); grup('butce',BUTCE,'radio','butce');
+grup('gebelik',GEBELIK,'radio','gebelik'); grup('ilac',ILAC,'checkbox','ilac'); grup('islem',ISLEM,'checkbox','islem');
+grup('alerji',ALERJI,'checkbox','alerji'); grup('kirmizi',KIRMIZI,'checkbox','kirmizi');
+
+function bildir(m,yer){ if(!YAYIN){ uyar(m); return; } const el=document.getElementById(yer); if(el){ el.textContent=m; el.classList.remove('gizli'); } }
+function bildirSil(yer){ if(!YAYIN) return; const el=document.getElementById(yer); if(el){ el.textContent=''; el.classList.add('gizli'); } }
+let sira=[];
+document.getElementById('sikayetler').addEventListener('change',e=>{
+  const v=e.target.value;
+  bildirSil('b-sikayet');
+  if(e.target.checked){ if(sira.length>=3){e.target.checked=false;bildir('En fazla 3 şikâyet seçebilirsiniz.','b-sikayet');return;} sira.push(v);} else sira=sira.filter(x=>x!==v);
+  document.querySelectorAll('#sikayetler label').forEach(l=>{const i=l.querySelector('input');const s=l.querySelector('.sira');const n=sira.indexOf(i.value);s.textContent=n+1;s.classList.toggle('gizli',n<0);});
+});
+for(const [id,yok] of [['ilac','yok'],['alerji','yok'],['kirmizi','yok'],['islem','yok']]){
+  document.getElementById(id).addEventListener('change',e=>{
+    const all=[...document.querySelectorAll('#'+id+' input')];
+    if(e.target.value===yok&&e.target.checked) all.forEach(i=>{if(i.value!==yok)i.checked=false});
+    else if(e.target.checked) all.forEach(i=>{if(i.value===yok)i.checked=false});
+    if(id==='islem') document.getElementById('islemTarihKutu').classList.toggle('gizli',!cok('islem').some(x=>x!=='yok'));
+  });
+}
+const tek=n=>document.querySelector(`input[name=${n}]:checked`)?.value;
+const cok=n=>[...document.querySelectorAll(`input[name=${n}]:checked`)].map(i=>i.value);
+
+const GUN=864e5;
+function tarihUTC(s){ const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||''); return m?Date.UTC(+m[1],+m[2]-1,+m[3]):null; }
+function bugunUTC(b){ if(typeof b==='string') return tarihUTC(b); const d=b||new Date(); return Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()); }
+function trTarih(t){ const d=new Date(t); return String(d.getUTCDate()).padStart(2,'0')+'.'+String(d.getUTCMonth()+1).padStart(2,'0')+'.'+d.getUTCFullYear(); }
+const kodlar=s=>String(s).match(/\b[GTMVP]\d{1,2}\b/g)||[];
+const tl=n=>Number(n).toLocaleString('tr-TR')+' TL';
+
+function secici(yasak, butce){
+  return function(liste, korunan){
+    const ucuz=butce==='temel' && !korunan;
+    const u=[...new Set(liste||[])].filter(i=>P[i] && !yasak(i));
+    const anahtar=i=>[P[i].s===false?1:0, ucuz?(P[i].f||0):0];
+    return u.map((id,ix)=>({id,ix,a:anahtar(id)})).sort((x,y)=>{for(let j=0;j<2;j++) if(x.a[j]!==y.a[j]) return x.a[j]-y.a[j]; return x.ix-y.ix;}).map(x=>x.id);
+  };
+}
+function siraIz(liste, u, yasak, iz, yer){
+  const ilk=(liste||[]).filter(i=>P[i]&&!yasak(i))[0];
+  if(ilk && u[0] && ilk!==u[0]){
+    const neden=P[ilk].s===false?'stokta yok, alta indi':'bütçe sırası';
+    iz.push(`K-SIRA-ILK-01 [karar]: ${yer} - ${ilk} (${neden}) yerine ${u[0]}.`);
+  }
+}
+
+function motor(c){
+  c=Object.assign({sikayet:[],ilac:[],islem:[],alerji:[],kirmizi:[],butce:'tam',renkli:'hayir',tatil:'hayir',makyaj:'hayir',gunes:'evet'},c);
+  const iz=[], kuyruk=[], uyarilar=[], acik=new Set();
+  const guv={}, sikC={}, simdiC={};
+  const ekle=(h,ids,neden)=>ids.forEach(i=>{(h[i]=h[i]||[]).push(neden)});
+  const ilac=c.ilac.filter(x=>x!=='yok'), alerji=c.alerji.filter(x=>x!=='yok'), kirmizi=c.kirmizi.filter(x=>x!=='yok'), islemSec=c.islem.filter(x=>x!=='yok');
+
+  if(kirmizi.length){
+    const ky=[['tehlike',SUZGEC.kirmizi.uyari]]; if(kirmizi.includes('kistik')) ky.push(['tehlike',SUZGEC.kirmizi.kistik]); ky.push(['tehlike',SUZGEC.kirmizi.acil]);
+    return {yonlendir:true, uyarilar:ky, iz:['K-GUV-KIRMIZI-01 [akademi]: '+kirmizi.map(k=>KIRMIZI[k]).join(', ')+' -> ürün önerilmez.'], kuyruk:['Kırmızı bayrak: Elif Hanım bilgi alır; satış önerisi yapılmaz.'], cikan:{}, acik:[], bloklar:[], destek:[]};
+  }
+  let destekYok=false;
+  if(c.gebelik==='evet'){
+    const g=SUZGEC.gebelik;
+    ekle(guv,g.kesin,'gebelik/emzirme (kesin liste)');
+    ekle(guv,g.temkinli.filter(i=>!(i==='M3'&&AYAR.gebelikteM3)),'gebelik/emzirme (temkinli liste)');
+    acik.add('gebelikteM3');
+    uyarilar.push(['tehlike',g.uyari]); destekYok=true; kuyruk.push('Gebelik/emzirme.');
+    iz.push('K-GUV-GEBE-01 [karar, S7]: kesin + temkinli listenin hepsi çıktı; laktik/laktobiyonikler (G2, M1, P1, P2, P8) kalır.');
+  }
+  const ilacUyari=new Set();
+  for(const i of ilac){ const g=SUZGEC[i]; ekle(guv,g.cikar,ILAC[i]); ilacUyari.add(g.uyari); if(g.destekYok) destekYok=true; kuyruk.push('İlaç/tedavi: '+ILAC[i]+'.'); iz.push(g.kart+' ['+({a:'akademi',e:'karar',g:'varsayılan'}[g.e])+']: '+ILAC[i]+' -> '+g.cikar.join(', ')+' çıktı.'); }
+  ilacUyari.forEach(m=>uyarilar.push(['tehlike',m]));
+  for(const a of alerji) ekle(guv,ALERJI_URUN[a],'alerji: '+ALERJI[a]);
+  if(alerji.length){ uyarilar.push(['uyari',SUZGEC.alerji.uyari+(alerji.includes('salisilat')?' '+SUZGEC.alerji.salisilatEk:'')]); kuyruk.push('Alerji işaretlendi: '+alerji.map(a=>ALERJI[a]).join(', ')+'.'); iz.push('K-GUV-ALERJI-01 [karar, S13]: '+alerji.map(a=>ALERJI[a]+' -> '+ALERJI_URUN[a].join(', ')).join(' · ')); }
+
+  const nazik=c.sikayet.filter(s=>KURAL[s].nazik);
+  const sk=[...nazik,...c.sikayet.filter(s=>!KURAL[s].nazik)];
+  if(nazik.length && nazik[0]!==c.sikayet[0]) iz.push('K-COKLU-01 [akademi]: hassasiyet/kızarıklık seçildiği için nazik rutin temel alındı.');
+  if(sk.includes('kizariklik')){ uyarilar.push(['uyari','Kızarıklık sürekli hâle gelirse ya da yanma, batma, sivilce benzeri kabarcıklar eşlik ederse dermatoloğunuza danışın.']); kuyruk.push('Kızarıklık şikâyeti (dermatolog notu verildi).'); }
+
+  const bugun=bugunUTC(c.bugun);
+  let islemAktif=false, islemBitis=null, ilkTur=null;
+  if(islemSec.length){
+    let t=tarihUTC(c.islemTarih); const tarihYok=t==null; if(tarihYok) t=bugun; if(t>bugun) t=bugun;
+    let enGec=-Infinity;
+    for(const tur of SUZGEC.islem.sira) if(islemSec.includes(tur)){ const b=t+AYAR.islemGun[tur]*GUN; if(b>enGec){enGec=b; ilkTur=tur;} }
+    islemBitis=enGec; islemAktif=bugun<enGec;
+    if(islemSec.includes('lazer')||islemSec.includes('diger')) acik.add('islemGun');
+    iz.push(`K-GUV-ISLEM-01 [karar, S8]: işlem ${islemSec.map(x=>ISLEM[x]).join(', ')}; tarih ${tarihYok?'yok (bugün sayıldı)':trTarih(t)}; en uzun bekleme ${AYAR.islemGun[ilkTur]} gün -> ${islemAktif?'bekleme süresi içinde, '+trTarih(islemBitis)+' sonrasında tam rutin':'bekleme süresi doldu, tam rutin'}.`);
+  }
+  const tatilAktif=c.tatil==='plan'||c.tatil==='bronz';
+
+  const bloklar=[]; let mod;
+  const sade=c.yas==='alt18'?'yas':(ilac.includes('hastalik')?'hastalik':null);
+  if(sade){
+    mod='sade';
+    if(sade==='yas'){ uyarilar.push(['uyari',SUZGEC.yas18.uyari]); destekYok=true; kuyruk.push('18 yaş altı: sade rutin.'); iz.push('K-GUV-YAS-01 [karar, S12]: 18 yaş altı -> sade rutin (temizleyici + hafif nemlendirici + güneş koruyucu); tonik, serum, aktif, haftalık, göz, renkli katman ve destek satırı yok.'); }
+    else iz.push('K-GUV-HASTALIK-01 [akademi]: doktorun takip ettiği cilt durumu -> yalnız nazik temizleyici + nemlendirici + renksiz güneş koruyucu.');
+    if(islemAktif){ uyarilar.push(['uyari',SUZGEC.islem.uyari]); kuyruk.push('İşlem sonrası bekleme süresi içinde.'); }
+    if(tatilAktif) uyarilar.push(['uyari',SUZGEC.tatil.uyari]);
+    bloklar.push(sadeRutin(c,sade,tatilAktif,i=>!!guv[i],iz));
+  } else {
+    for(const s of sk) if(KURAL[s].cikar) ekle(sikC,KURAL[s].cikar,SIKAYET[s]+' rutininde önerilmez');
+    if(TEMEL[c.tip].cikar) ekle(sikC,TEMEL[c.tip].cikar,'hassas cilt tipinde önerilmez');
+    if(islemAktif||tatilAktif){
+      mod='simdiSonra';
+      if(islemAktif){ ekle(simdiC,SUZGEC.islem.cikar,'işlem sonrası bekleme süresi'); uyarilar.push(['uyari',SUZGEC.islem.uyari]); kuyruk.push('İşlem sonrası bekleme süresi içinde ('+trTarih(islemBitis)+' sonrasına kadar).'); }
+      if(tatilAktif){ ekle(simdiC,SUZGEC.tatil.cikar,'tatil/bronzluk dönemi'); uyarilar.push(['uyari',SUZGEC.tatil.uyari]); iz.push('K-GUNES-02 [karar, S14]: tatil/bronzluk -> "Şimdi" sade rutin; asit, retinol, peeling yok.'); }
+      const renkliYok=islemAktif && islemSec.some(x=>x==='guclu'||x==='lazer');
+      if(renkliYok) iz.push('K-GUV-ISLEM-01 [karar]: güçlü peeling ya da lazer/IPL sonrası "Şimdi" döneminde renkli katman yok.');
+      bloklar.push(simdiRutin(c,sk,islemAktif,ilkTur,tatilAktif,i=>!!(guv[i]||simdiC[i]),iz,renkliYok));
+      const b=tamRutin(c,sk,i=>!!(guv[i]||sikC[i]),iz,kuyruk,acik);
+      b.tur='sonra';
+      const parca=[]; if(islemAktif) parca.push(trTarih(islemBitis)+' tarihinden sonra');
+      if(tatilAktif) parca.push(c.tatil==='bronz'?'bronzluğunuz geçtikten 8-10 gün sonra (bronzlaşmadan en az 3 hafta sonra)':'tatilden dönüp bronzluğunuz geçtikten 8-10 gün sonra (bronzlaşmadan en az 3 hafta sonra)');
+      b.baslama=parca.join(' ve ')+(parca.length>1?' (hangisi daha geç ise)':'');
+      bloklar.push(b);
+    } else {
+      mod='tam';
+      if(islemSec.length && !islemAktif) iz.push('İşlem bekleme süresi dolduğu için tam rutin verildi.');
+      bloklar.push(tamRutin(c,sk,i=>!!(guv[i]||sikC[i]),iz,kuyruk,acik));
+    }
+    if(sk.includes('leke') && c.gunes!=='evet') uyarilar.push(['uyari','Güneş koruyucu düzenli kullanılmadan leke rutininden beklenen görünüm alınamaz. Her sabah son adımı atlamayın.']);
+  }
+  for(const b of bloklar){ butceUygula(b,c,iz,kuyruk); if(c.butce!=='tam') acik.add('butceToplam'); }
+  bloklar.forEach((b,i)=>sonIslem(b, islemSec.length && i===bloklar.length-1 ? (b.tur==='sonra'&&islemAktif?'tarih':'sure') : null, (b.tur==='tam'||b.tur==='sonra')&&sk.includes('leke'), islemSec.length && i===0));
+  if(islemSec.length) kuyruk.push('İşlem seçildi: kalıcı "uzmanın önerisini alın" uyarısı gösterildi.');
+  let destek=[];
+  if(!destekYok){ for(const d of DESTEK){ if(d.sigara && c.sigara!=='evet') continue; if(d.hep || d.s.some(x=>sk.includes(x))) destek.push(d); } }
+  else iz.push('Genel destek (takviye) satırları gösterilmedi: gebelik/ilaç/18 altı (bölüm 4).');
+  if(bloklar.some(b=>blokUrunleri(b).includes('G6'))) acik.add('pcsNot');
+  kuyruk.unshift('İlk 2-4 hafta her sonuç Elif Hanım\'dan geçer (tasarım).');
+  const cikan={}; for(const h of [guv,sikC,simdiC]) for(const [i,n] of Object.entries(h)) (cikan[i]=cikan[i]||[]).push(...n);
+  return {mod,bloklar,uyarilar,destek,iz,kuyruk,cikan,acik:[...acik],ana:sk[0],sk,guv,sikC,simdiC};
+}
+
+function blokUrunleri(b){
+  const ids=[]; for(const x of [...b.sabah,...b.aksam]) if(x.u&&x.u[0]) ids.push(x.u[0]);
+  for(const h of b.haftalik||[]) ids.push(h.u[0]); if(b.gunici) ids.push(b.gunici.u[0]);
+  return [...new Set(ids)];
+}
+function toplamHesapla(b){ return blokUrunleri(b).reduce((t,i)=>t+(P[i].f||0),0); }
+function notSuz(notlar,yasak){ return [...new Set(notlar)].filter(n=>n && !kodlar(n).some(yasak)); }
+
+const BUTCE_SIRA=[
+ {haftalik:true, neden:'haftalık bakım'}, {k:['R'], neden:'renkli katman'}, {k:['GS','GC'], neden:'göz bakımı'},
+ {k:['Y'], neden:'bakım yağı'}, {gunici:true, neden:'gün içinde'}, {k:['NS'], neden:'nem serumu'}, {k:['To'], neden:'tonik'},
+ {k:['MK'], neden:'makyaj temizliği'}, {ucuz:['T','N','GK','S']}, {k:['S'], neden:'serum'}, {k:['IU'], neden:'işlem sonrası bakım'}, {ucuz:['GK'], g20:true}
+];
+function butceUygula(b,c,iz,kuyruk){
+  const sinir=(AYAR.butceToplam||{})[c.butce]; if(sinir==null) return;
+  b.sinir=sinir;
+  const top=()=>toplamHesapla(b);
+  if(top()<=sinir) return;
+  const once=top(), tasinan=[];
+  const gorunen=()=>new Set(blokUrunleri(b));
+  const tasi=(id,neden,sik)=>{ if(!gorunen().has(id) && !b.ileride.some(x=>x.id===id)){ b.ileride.push({id,neden:neden+' (bütçe sınırı)',sik}); tasinan.push(id); } };
+  const leke=(b.tur==='tam'||b.tur==='sonra') && (c.sikayet||[]).includes('leke');
+  for(const a of BUTCE_SIRA){
+    if(top()<=sinir) break;
+    if(a.haftalik){
+      while(top()>sinir && b.haftalik.length){ let i=0; b.haftalik.forEach((h,j)=>{ if((P[h.u[0]].f||0)>(P[b.haftalik[i].u[0]].f||0)) i=j; }); const h=b.haftalik.splice(i,1)[0]; tasi(h.u[0],a.neden,h.items[0].sik); }
+    } else if(a.gunici){
+      if(b.gunici){ const id=b.gunici.u[0]; b.gunici=null; tasi(id,a.neden); }
+    } else if(a.k){
+      while(top()>sinir){
+        const adim_=[...b.sabah,...b.aksam].filter(x=>a.k.includes(x.k)); if(!adim_.length) break;
+        const id=adim_.map(x=>x.u[0]).sort((x,y)=>(P[y].f||0)-(P[x].f||0))[0];
+        for(const r of [b.sabah,b.aksam]) for(let i=r.length-1;i>=0;i--) if(a.k.includes(r[i].k)&&r[i].u[0]===id) r.splice(i,1);
+        tasi(id,a.neden);
+      }
+    } else if(a.ucuz){
+      while(top()>sinir){
+        let en=null;
+        for(const x of [...b.sabah,...b.aksam]){ if(!a.ucuz.includes(x.k)) continue; if(x.k==='GK' && leke && !a.g20) continue;
+          const say=gorunen(); const ilk=x.u[0];
+          if([...b.sabah,...b.aksam].some(y=>y.u[0]===ilk && y.k!==x.k)) continue;
+          for(const alt of x.u.slice(1)){ if(P[alt].s===false||say.has(alt)) continue; const k=(P[ilk].f||0)-(P[alt].f||0); if(k>0 && (!en||k>en.k)) en={x,alt,k,ilk}; } }
+        if(!en) break;
+        for(const y of [...b.sabah,...b.aksam]) if(y.u[0]===en.ilk && y.k===en.x.k){ y.u=[en.alt,...y.u.filter(i=>i!==en.alt)]; }
+        iz.push(`Bütçe sınırı [karar]: ${YUVA_AD[en.x.k]} ${en.ilk} yerine daha ucuz ${en.alt}.`);
+      }
+    }
+  }
+  b.toplam=top();
+  if(tasinan.length) iz.push(`Bütçe sınırı [karar]: "${c.butce}" en çok ${sinir} TL; toplam ${once} -> ${b.toplam} TL; İleride listesine kaydı: ${tasinan.join(', ')}.`);
+  if(b.toplam>sinir){ b.butceAsim=true; kuyruk.push(`Bütçe sınırı tutmadı: ${b.tur} rutini ${b.toplam} TL > ${sinir} TL.`); iz.push(`Bütçe sınırı [karar]: korunan ürünlerle bile ${b.toplam} TL > ${sinir} TL.`); }
+}
+
+const ISLEM_UYARI='İşlem yapılan bölgeye yeni ürün eklemeden önce işlemi yapan uzmanın önerisini alın. Tahriş sürüyorsa tam rutine geçmeyin.';
+const ISLEM_ON='İşlem yapılan bölgeye bu listedeki ürünleri, işlemi yapan uzmanın uygun bulması hâlinde uygulayın. İşlem türü ve geçen süre tek başına kullanıma uygunluğu göstermez. Tahriş sürüyorsa tam rutine geçmeyin.';
+const HAFTA_ORTAK='"İleride" bölümündekiler dahil, haftalık bakım ürünlerini aynı akşam birlikte kullanmayın. Başlangıçta haftada 1, sonrasında toplam en çok 2 ayrı bakım akşamı planlayın. Peeling, retinollü maske veya kompres kullandığınız akşam aktif serumu atlayın. Güçlü haftalık ürünlere rutine başladıktan en erken 3. haftada başlayın; ürüne özel daha uzun bekleme süresi varsa o geçerlidir.';
+const P5_LEKE='Rutine başladıktan sonraki ilk 6 hafta bu maskeyi kullanmayın. Sonrasında en çok 15 günde 1 akşam kullanın.';
+function sonIslem(b,islemTur,leke,islemOn){
+  const yasak=b.yasak||(()=>false);
+  for(const x of [...b.sabah,...b.aksam]){ x.u=x.u.filter(i=>!yasak(i)); if(x.not && kodlar(x.not).some(yasak)) x.not=null; }
+  b.sabah=b.sabah.filter(x=>x.u.length); b.aksam=b.aksam.filter(x=>x.u.length);
+  b.haftalik=(b.haftalik||[]).map(h=>{ const items=h.items.filter(x=>!yasak(x.id)&&!kodlar(x.sik).some(yasak)); return Object.assign({},h,{items,u:items.map(x=>x.id)}); }).filter(h=>h.u.length);
+  if(b.gunici){ b.gunici.u=b.gunici.u.filter(i=>!yasak(i)); if(!b.gunici.u.length) b.gunici=null; }
+  const gor=new Set(blokUrunleri(b)); const il=[];
+  for(const x of b.ileride||[]) if(P[x.id] && !yasak(x.id) && !gor.has(x.id) && !il.some(y=>y.id===x.id)) il.push(Object.assign({},x,{sik:x.sik&&!kodlar(x.sik).some(yasak)?x.sik:null}));
+  b.ileride=il;
+  const hft=new Set(b.haftalik.flatMap(h=>h.u).concat(b.ileride.filter(x=>/haftalık/.test(x.neden)&&HAFTALIK_URUN.has(x.id)).map(x=>x.id)));
+  b.hnot=hft.size?[HAFTA_ORTAK]:[];
+  b.leke=!!leke;
+  const v=new Set([...b.sabah,...b.aksam].flatMap(x=>x.u).concat([...hft],b.ileride.map(x=>x.id)));
+  const notlar=[...(b.notlar||[])];
+  for(const n of BIRLIKTE_MUSTERI) if(n.k(v,b,hft)) notlar.push(n.m);
+  if(blokUrunleri(b).some(i=>['G3','G6','G29','V8','V9','T4','G7','P13','P5'].includes(i))) notlar.push('Rutininizde asitli, peeling ya da retinollü ürün var: her sabah güneş koruyucu şart.');
+  b.notlar=notSuz(notlar,yasak);
+  if(islemOn) b.islemOn=ISLEM_ON;
+  if(islemTur) b.islemUyari=(islemTur==='tarih'?'Gösterilen tarih, ürünlere başlayabileceğiniz anlamına gelmez. ':'İşlemin üzerinden geçen süre, ürünlere başlayabileceğiniz anlamına gelmez. ')+ISLEM_UYARI;
+  b.toplam=toplamHesapla(b);
+  b.ileriToplam=b.ileride.reduce((t,x)=>t+(P[x.id].f||0),0);
+}
+function sirala(r){ r.sort((a,b)=>SIRA_K[a.k]-SIRA_K[b.k]); return r; }
+function adim(k,u,e,ek){ return Object.assign({k,ad:YUVA_AD[k],u,e:e||'a'},ek||{}); }
+
+function makyajEkle(c,aksam,sec,notlar){
+  if(c.makyaj!=='evet') return;
+  const u=sec(['V3']);
+  if(u.length) aksam.unshift(adim('MK',u,'a',{ad:'Makyaj temizliği (göz-dudak, ovalamadan)'}));
+  else notlar.push('Göz ve dudak makyajını cilt tipinizin temizleyicisiyle nazikçe temizleyin.');
+  if(sec(['V2']).length) notlar.push('Hafif günlük makyajda tek başına V2 de kullanılabilir; o akşam enzimli ikinci temizleyici kullanılmaz.');
+}
+function zorunlu(k,liste,sec,yer,iz,e){
+  let u=sec(liste), etk=e||'a';
+  if(!u.length){ u=sec(YEDEK[k]); etk='g'; if(u.length) iz.push(`${yer}: ${liste.join(', ')} süzgeçte çıktı, yedek ${u[0]} konuldu [varsayılan].`); }
+  return u.length?adim(k,u,etk):null;
+}
+function gkListe(c,liste,ekOne){ let l=[...(ekOne||[]),...liste]; if(c.ilac.includes('hormon')) l=['G20',...l]; return l; }
+
+function sadeRutin(c,tur,tatil,yasak,iz){
+  const sec=secici(yasak,c.butce), Y=SUZGEC.yas18, notlar=[];
+  const T=tur==='yas'?Y.T[c.tip]:NAZIK_T[c.tip], N=tur==='yas'?Y.N[c.tip]:TEMEL[c.tip].N, GK=tur==='yas'?Y.GK[c.tip]:TEMEL[c.tip].GK;
+  const e=tur==='yas'?'e':'a';
+  const gk=gkListe(c,GK,tatil?['G20']:null);
+  const yap=()=>{const t=zorunlu('T',T,sec,'Sade rutin / temizleyici',iz,e), n=zorunlu('N',N,sec,'Sade rutin / nemlendirici',iz,e); return [t,n];};
+  const sabah=[...yap(), zorunlu('GK',gk,sec,'Sade rutin / güneş koruyucu',iz,e)].filter(Boolean);
+  const aksam=yap().filter(Boolean);
+  makyajEkle(c,aksam,sec,notlar);
+  if(tatil) notlar.push('Güneş koruyucuyu dışarıda 2-3 saatte bir ve yüzme/terleme sonrası yenileyin.');
+  const b={tur:'sade', baslik:tur==='yas'?'Sade rutin (18 yaş altı)':'Sade rutin', sabah:sirala(sabah), aksam:sirala(aksam), haftalik:[], gunici:null, notlar:notSuz(notlar,yasak), ileride:[], yasak};
+  b.toplam=toplamHesapla(b); return b;
+}
+
+function simdiRutin(c,sk,islem,ilkTur,tatil,yasak,iz,renkliYok){
+  const sec=secici(yasak,c.butce), notlar=[], S=SUZGEC.islem;
+  const T=[...NAZIK_T[c.tip],'G1','T1','M1'];
+  const sabah=[], aksam=[];
+  for(const r of [sabah,aksam]){
+    const t=zorunlu('T',T,sec,'Şimdi / temizleyici',iz,'e'); if(t) r.push(t);
+    if(islem){
+      const tur=ilkTur==='lazer'?'lazer':(ilkTur==='hafif'?'hafif':'diger');
+      const u=sec(S.ilk[tur]);
+      if(u.length){ r.push(adim('IU',u,'e',{not:u[0]==='G19'?'İşlem sonrası uygulama sıklığını işlemi yapan uzmanın önerisine göre belirleyin.':null})); if(u[0]!==S.ilk[tur][0]) iz.push(`İşlem sonrası ilk ürün ${S.ilk[tur][0]} süzgeçte çıktı, ${u[0]} konuldu [varsayılan].`); }
+      const n=zorunlu('N',['G13','P4','T6'],sec,'Şimdi / nemlendirici',iz,'e'); if(n) r.push(n);
+    } else {
+      const n=zorunlu('N',TEMEL[c.tip].N,sec,'Şimdi / nemlendirici',iz,'e'); if(n) r.push(n);
+    }
+  }
+  const gk=gkListe(c, islem&&!tatil?['G21','M2','G20']:['G20',...TEMEL[c.tip].GK]);
+  const g=zorunlu('GK',gk,sec,'Şimdi / güneş koruyucu',iz,'e'); if(g) sabah.push(g);
+  const rk=renkliYok?null:renkliKur(c,sk,sec,true), ileride=[];
+  if(rk){ if(c.butce==='temel') ileride.push({id:rk.u[0],neden:'renkli katman'}); else sabah.push(rk); }
+  if(renkliYok && renkliKur(c,sk,sec,true)) notlar.push('Bu dönemde renkli katman (BB krem, fondöten) önerilmez.');
+  makyajEkle(c,aksam,sec,notlar);
+  if(tatil) notlar.push('Güneş koruyucuyu dışarıda 2-3 saatte bir ve yüzme/terleme sonrası yenileyin; dışarı çıkmadan yaklaşık 10 dakika önce sürün.');
+  notlar.push('Bu dönemde tonik, serum, peeling ve haftalık bakım ürünü yok.');
+  const b={tur:'simdi', baslik:islem?'Şimdi: işlem sonrası dönem':'Şimdi: tatil ve bronzluk dönemi', sabah:sirala(sabah), aksam:sirala(aksam), haftalik:[], gunici:null, notlar:notSuz(notlar,yasak), ileride, yasak};
+  b.toplam=toplamHesapla(b); b.ileriToplam=ileride.reduce((t,x)=>t+(P[x.id].f||0),0); return b;
+}
+
+function renkliKur(c,sk,sec,simdi){
+  const onerilir=sk.some(s=>KURAL[s].renkliOnerilir);
+  if(c.renkli!=='evet' && !onerilir) return null;
+  let liste;
+  if(simdi) liste=['G24'];
+  else if(c.tip==='hassas'||sk.includes('kizariklik')||sk.includes('hassasiyet')) liste=['G23','M3','G24'];
+  else if(sk.includes('mat') && c.renkli==='evet') liste=['G23','G24'];
+  else liste=['G22','G24'];
+  const u=sec(liste); if(!u.length) return null;
+  return adim('R',u,'e',{ad:c.renkli==='evet'?'Renkli katman (renksizin üstüne)':'Renkli katman (önerilir; renksizin üstüne)', not:'Renkli ürün renksiz koruyucunun yerine geçmez.'});
+}
+
+function temizleyiciSec(c,sk){
+  const tem=TEMEL[c.tip].T;
+  if(c.tip==='hassas'||sk.includes('kizariklik')||sk.includes('hassasiyet')) return {liste:['M1','T1',...tem], iz:'Temizleyici (S1) [akademi]: hassas cilt ya da kızarıklık/hassasiyet -> M1, T1.'};
+  if(sk.some(s=>['leke','kirisiklik','elastikiyet'].includes(s))) return {liste:['P1',...tem], iz:'Temizleyici (S1) [akademi]: leke/kırışıklık/sıkılık kaybı -> P1, sonra cilt tipinin temizleyicisi.'};
+  const s=KURAL[sk[0]].sabah.find(x=>x.k==='T'&&x.u);
+  if(s) return {liste:[...s.u,...tem], iz:'Temizleyici [akademi]: '+SIKAYET[sk[0]]+' rutininin temizleyicisi ('+s.u.join(', ')+').'};
+  return {liste:tem, iz:'Temizleyici (S1) [akademi]: cilt tipinin temizleyicisi.'};
+}
+
+function tamRutin(c,sk,yasak,iz,kuyruk,acik){
+  const sec=secici(yasak,c.butce), tem=TEMEL[c.tip], ana=sk[0], K=KURAL[ana];
+  const nazikVar=sk.some(s=>KURAL[s].nazik);
+  const temelL=(k,z)=>k==='To'&&z==='aksam'&&tem.ToAksam?tem.ToAksam:tem[k];
+  const TZ=temizleyiciSec(c,sk); iz.push(TZ.iz);
+  iz.push(K.kart+' [akademi]: ana rutin '+SIKAYET[ana]+' (hedef: "'+K.hedef+'").');
+  const yer=(z,k,s)=>(z==='sabah'?'Sabah':'Akşam')+' / '+YUVA_AD[k]+(s?' ('+SIKAYET[s]+')':'');
+  function coz(x,z,kaynak,yedeksiz){
+    if(x.sadeceTip && !x.sadeceTip.includes(c.tip)) return null;
+    let liste;
+    if(x.k==='T') liste=TZ.liste;
+    else if(x.k==='GK'){ const g20=sk.includes('leke')||(!nazikVar&&sk.some(s=>s==='kirisiklik'||s==='elastikiyet')); liste=gkListe(c,[...(x.u||[]),...tem.GK], g20?['G20']:null); }
+    else liste=x.u?((x.tip&&x.tip[c.tip])||(nazikVar&&kaynak!==ana&&x.nazik)||x.u):temelL(x.k,z);
+    const korunan=(x.k==='S'&&kaynak===ana)||(x.k==='GK'&&sk.includes('leke'));
+    let u=sec(liste,korunan), e=x.e||'a';
+    siraIz(liste,u,yasak,iz,yer(z,x.k,kaynak));
+    if(!u.length && yedeksiz) return null;
+    if(!u.length && x.u && temelL(x.k,z)){ u=sec(temelL(x.k,z),korunan); if(u.length) iz.push(`${yer(z,x.k,kaynak)}: ${liste.join(', ')} süzgeçte çıktı, cilt tipinin ürünü ${u[0]} konuldu.`); }
+    if(!u.length && YEDEK[x.k]){ u=sec(YEDEK[x.k]); e='g'; if(u.length) iz.push(`${yer(z,x.k,kaynak)}: yedek ${u[0]} konuldu [varsayılan].`); }
+    if(!u.length){ iz.push(`${yer(z,x.k,kaynak)}: uygun ürün kalmadı, adım atlandı (${liste.join(', ')}).`); return null; }
+    return adim(x.k,u,e,{ad:x.ad||YUVA_AD[x.k], not:x.not||null, opt:!!x.opt||x.k==='Y'||x.k==='NS', kaynak});
+  }
+  const kur=z=>{ const r=K[z].map(x=>coz(x,z,ana)).filter(Boolean);
+    const S=r.find(x=>x.k==='S'), N=K[z].find(x=>x.k==='N'&&x.seri);
+    if(S&&N&&N.seri[S.u[0]]){ const i=r.findIndex(x=>x.k==='N'); const u=sec([...N.seri[S.u[0]],...r[i].u]); if(u.length) r[i]=Object.assign({},r[i],{u}); iz.push('Seri uyumu [akademi]: '+S.u[0]+' ile '+u[0]+'.'); }
+    return r; };
+  const temelBut=c.butce==='temel';
+  const sabah=kur('sabah'), aksam=kur('aksam');
+  const notlar=[...(tem.notlar||[]), ...(K.notlar||[]), ...((K.notTip||{})[c.tip]||[])];
+  let gunici=null; const notlar2=[];
+  const birlestir=(sabah,aksam,haftalikEk)=>{
+    for(const [n,s] of sk.slice(1).entries()){
+      const K2=KURAL[s]; const ikinci=n===0;
+      if(K2.gozEk){ gozEkle(sabah,aksam,K2,s); continue; }
+      if(!ikinci){ iz.push('K-COKLU-01 [akademi]: 3. şikâyet ('+SIKAYET[s]+') günlük rutine eklenmedi (1. şikâyet serum-krem çiftini, 2. şikâyet nem serumunu ya da haftalık ürünü belirler); "önerilmez" listesi uygulandı.'); continue; }
+      notlar2.push(...(K2.notlar||[]), ...((K2.notTip||{})[c.tip]||[]));
+      if(s==='kuruluk'){
+        for(const [r,z] of [[sabah,'sabah'],[aksam,'aksam']]){
+          const y=coz(K2[z].find(a=>a.k==='N'),z,s,true); const i=r.findIndex(a=>a.k==='N');
+          if(y && i>=0 && r[i].u[0]!==y.u[0] && !(z==='aksam'&&r[i].u[0]==='P9')){ r[i]=y; iz.push(`K-COKLU-01 [akademi]: ${z==='sabah'?'sabah':'akşam'} kremi 2. şikâyete (kuruluk) göre ${y.u[0]}.`); }
+        }
+        const yx=K2.aksam.find(a=>a.k==='Y'); if(yx && !aksam.some(a=>a.k==='Y')){ const y=coz(yx,'aksam',s,true); if(y) aksam.push(y); }
+        nemSerum(sabah,K2.sabah,'sabah',s); nemSerum(aksam,K2.aksam,'aksam',s);
+      } else if(s==='nemsizlik'){
+        nemSerum(sabah,K2.sabah,'sabah',s); nemSerum(aksam,K2.aksam,'aksam',s);
+      } else {
+        const x=K2.aksam.find(a=>a.k==='S'); const y=x&&coz(x,'aksam',s,true);
+        if(y && NEM.has(y.u[0])) nemSerum(aksam,[x],'aksam',s);
+        else if(y && AKTIF.has(y.u[0]) && KURAL[ana].nazik){
+          const i=aksam.findIndex(a=>a.k==='S');
+          if(i<0) aksam.push(y);
+          else if(!AKTIF.has(aksam[i].u[0])){ const eski=aksam[i]; aksam[i]=Object.assign(y,{ad:'Serum ('+SIKAYET[s].toLowerCase()+' için)'}); if(NEM.has(eski.u[0])&&!aksam.some(a=>a.k==='NS')) aksam.push(Object.assign({},eski,{k:'NS',ad:YUVA_AD.NS,opt:true})); iz.push(`K-COKLU-01 [akademi]: nazik rutin temel; akşam serumu 2. şikâyete (${SIKAYET[s]}) göre yumuşak seçenek ${y.u[0]}.`); }
+        } else if(y) iz.push(`K-COKLU-01 [akademi]: 2. şikâyetin (${SIKAYET[s]}) serumu ${y.u[0]} eklenmedi; serum-krem çifti 1. şikâyetten (en çok 1 aktif serum).`);
+      }
+      if(K2.gunici && !gunici){ const u=sec(K2.gunici); if(u.length) gunici=adim('GI',u,'a',{ad:'Gün içinde (makyaj üstü nem spreyi)'}); }
+    }
+  };
+  function nemSerum(r,adimlar,z,s){
+    const S=r.find(a=>a.k==='S'); if(!S || !AKTIF.has(S.u[0]) || r.some(a=>a.k==='NS')) return;
+    const x=adimlar.find(a=>a.k==='S'); if(!x) return;
+    const u=sec((x.tip&&x.tip[c.tip])||x.u||tem.S).filter(i=>NEM.has(i)); if(u.length){ r.push(adim('NS',u,'a',{opt:true,kaynak:s})); }
+  }
+  function gozEkle(sabah,aksam,K2,s){
+    for(const [r,z] of [[sabah,'sabah'],[aksam,'aksam']]){
+      for(const x of K2[z].filter(a=>a.k==='GS'||a.k==='GC')){ const y=coz(x,z,s,true); if(!y) continue; const i=r.findIndex(a=>(a.k==='GS'||a.k==='GC')&&(a.k===x.k||a.opt)); if(i>=0) r.splice(i,1); r.push(y); }
+    }
+    iz.push('K-SIK-GOZALTI-01 [akademi]: göz serumu ve göz kremi yüz serumundan sonra, kremden önce eklendi.');
+  }
+  if(K.gunici){ const u=sec(K.gunici); if(u.length) gunici=adim('GI',u,'a',{ad:'Gün içinde (makyaj üstü nem spreyi)'}); }
+  else if(tem.gunici){ const u=sec(tem.gunici); if(u.length) gunici=adim('GI',u,'a',{ad:'Gün içinde (nem spreyi)'}); }
+
+  const ek={ileride:[]};
+  const tamS=sabah.map(x=>Object.assign({},x)), tamA=aksam.map(x=>Object.assign({},x));
+  birlestir(tamS,tamA,ek);
+  let S1=temelBut?sabah:tamS, A1=temelBut?aksam:tamA;
+  for(const [r,z] of [[S1,'sabah'],[A1,'aksam']]){
+    const S=r.find(a=>a.k==='S');
+    if(S && AKTIF.has(S.u[0]) && !r.some(a=>a.k==='NS')){ const ts=sec(tem.S); if(ts[0]&&NEM.has(ts[0])) r.push(adim('NS',ts.filter(i=>NEM.has(i)),'a',{opt:true})); }
+  }
+  if(tem.aksamYag && !A1.some(a=>a.k==='Y')){ const u=sec(['P12']); if(u.length) A1.push(adim('Y',u,'a',{opt:true,temelYag:true})); }
+  if(A1.some(a=>a.k==='To'&&a.u[0]==='G3')){ const i=A1.findIndex(a=>a.k==='Y'); if(i>=0){ A1.splice(i,1); iz.push('2d [akademi]: G3 kullanılan akşam P12 yok.'); } }
+  for(const r of [S1,A1]) if(r.some(a=>a.k==='S'&&a.u[0]==='T4')){ const t=r.find(a=>a.k==='To'&&a.u[0]==='G3'); if(t){ const u=sec(t.u.filter(i=>i!=='G3').concat(['G2','P3'])); if(u.length) t.u=u; iz.push('2d [varsayılan]: T4 ile G3 aynı seansta değil, tonik '+t.u[0]+'.'); } }
+  makyajEkle(c,A1,sec,notlar);
+  const rk=renkliKur(c,sk,sec,false);
+  const hf=haftalikKur(c,sk,sec,iz);
+  let ileride=[...ek.ileride];
+  if(temelBut){
+    const tut=new Set(['MK','T','S','N','GK']); if(ana==='gozalti'){ tut.add('GS'); tut.add('GC'); }
+    for(const r of [S1,A1]) for(let i=r.length-1;i>=0;i--){ if(!tut.has(r[i].k)||r[i].opt) r.splice(i,1); }
+    const kalan=new Set([...S1,...A1].map(x=>x.u[0]));
+    const aday=[...tamS,...tamA].filter(x=>x.u&&x.u[0]&&!kalan.has(x.u[0])).map(x=>({id:x.u[0],neden:YUVA_AD[x.k]||x.ad}));
+    if(rk) aday.push({id:rk.u[0],neden:'renkli katman'});
+    for(const h of [...hf.liste,...hf.disarida]) aday.push({id:h.u[0],neden:'haftalık bakım',sik:h.items[0].sik});
+    if(gunici) aday.push({id:gunici.u[0],neden:'gün içinde'});
+    ileride=[...ileride,...aday];
+    iz.push('K-SIRA-ILK-01 [karar]: bütçe "temel" -> temizleyici + 1 serum + nemlendirici + renksiz güneş koruyucu; diğerleri "İleride ekleyebilecekleriniz".');
+  } else {
+    if(rk) S1.push(rk);
+    if(c.butce==='orta') for(const h of hf.disarida) ileride.push({id:h.u[0],neden:'haftalık bakım',sik:h.items[0].sik});
+  }
+  for(const [r,z] of [[S1,'Sabah'],[A1,'Akşam']]){
+    const say=()=>r.filter(a=>SAYILAN.has(a.k)).length;
+    for(const f of [a=>a.k==='Y'&&a.temelYag, a=>a.k==='NS', a=>a.k==='Y']) while(say()>5){ const i=r.findIndex(a=>f(a)&&a.opt); if(i<0) break; iz.push(`2a [akademi]: ${z} 5 adımı aştığı için isteğe bağlı ${r[i].u[0]} gösterilmedi.`); r.splice(i,1); }
+    if(say()>5) kuyruk.push(z+' rutini 5 adımı aşıyor ('+say()+').');
+  }
+  const ilerideTek=[]; const gor=new Set([...S1,...A1].map(x=>x.u[0]));
+  for(const x of ileride) if(!gor.has(x.id) && !ilerideTek.some(y=>y.id===x.id)) ilerideTek.push(x);
+  const haftalik=temelBut?[]:hf.liste;
+  { const var_=new Set([...S1,...A1].flatMap(x=>x.u)); for(const n of notlar2){ const k=kodlar(n); if(!k.length||k.some(i=>var_.has(i))) notlar.push(n); } }
+  if(S1.some(a=>a.k==='T'&&a.u[0]==='P1')) for(let i=notlar.length-1;i>=0;i--) if(/temizleyici(de| olarak)? P1/.test(notlar[i])) notlar.splice(i,1);
+  const b={tur:'tam', baslik:'Size özel rutin', sabah:sirala(S1), aksam:sirala(A1), haftalik, hnot:[], gunici:temelBut?null:gunici,
+    notlar:notSuz(notlar,yasak), ileride:ilerideTek, yasak};
+  b.toplam=toplamHesapla(b);
+  b.ileriToplam=ilerideTek.reduce((t,x)=>t+(P[x.id].f||0),0);
+  return b;
+}
+
+function haftalikKur(c,sk,sec,iz){
+  const kullan=new Set(), liste=[], disarida=[];
+  const limit=c.butce==='orta'?1:2;
+  const slotlar=s=>(KURAL[s].hTip&&KURAL[s].hTip[c.tip])||KURAL[s].haftalik||[];
+  const coz=(slot,s)=>{ const ids=sec(slot.l.map(h=>h.id)).filter(i=>!kullan.has(i)); if(!ids.length) return null; ids.forEach(i=>kullan.add(i)); return {u:ids, items:ids.map(i=>slot.l.find(h=>h.id===i)), kaynak:s}; };
+  const adaylar=[...slotlar(sk[0]).filter(x=>!x.ek).map(x=>[x,sk[0]])];
+  if(sk[1]){ const s2=slotlar(sk[1]).filter(x=>!x.ek)[0]; if(s2) adaylar.push([s2,sk[1]]); }
+  for(const [slot,s] of adaylar){ const x=coz(slot,s); if(!x) continue; if(liste.length<limit) liste.push(x); else disarida.push(x); }
+  if(c.butce==='tam') for(const slot of slotlar(sk[0]).filter(x=>x.ek)){ if(liste.length>=limit) break; const x=coz(slot,sk[0]); if(x){ liste.push(x); iz.push(KURAL[sk[0]].kart+' [akademi]: '+x.u[0]+' ileride ('+x.items[0].sik+').'); } }
+  return {liste,disarida};
+}
+
+const ETK={a:['e-akademi','akademi'],e:['e-karar','karar'],m:['e-metin','metin'],g:['e-varsayilan','varsayılan']};
+function adla(s){ return String(s).replace(/\b([GTMVP]\d{1,2})\b/g,m=>P[m]?P[m].n:m); }
+const FIYAT_TARIHI='17.11.2026';
+const fiyat=p=>p.f?' · '+(p.fb?p.fb+': ':'')+tl(p.f):'';
+function urunHtml(id){ const p=P[id]; if(!p) return id;
+  if(YAYIN){ const ad=p.u?`<a href="${p.u}" target="_blank" rel="noopener">${p.n}</a>`:p.n; return `${ad} <span class="tur">(${p.t}${fiyat(p)})</span>${p.s===false?' <span class="stok">şu an stokta yok</span>':''}${p.u?` <a class="git" href="${p.u}" target="_blank" rel="noopener">Ürüne git</a>`:''}`; }
+  const ad=p.u?`<a href="${p.u}" target="_blank" rel="noopener">${p.n}</a>`:p.n; return `${ad} <span class="tur">(${id} · ${p.t}${fiyat(p)})</span>${p.s===false?' <span class="stok">şu an stokta yok</span>':''}`; }
+function adimHtml(x){
+  const [cls,lbl]=ETK[x.e]||ETK.g;
+  const alt=x.u.slice(1).map(urunHtml).join('<br>');
+  return `<li class="urun"><b>${x.ad}${x.opt&&!/isteğe bağlı/.test(x.ad)?' (isteğe bağlı)':''}:</b> ${urunHtml(x.u[0])}${YAYIN?'':` <span class="etiket ${cls}">${lbl}</span>`}${alt?`<div class="ya">ya da: ${alt}</div>`:''}${x.not?`<div class="kucuk">${adla(x.not)}</div>`:''}</li>`;
+}
+const kullanim=id=>KULLANIM[id]?' '+adla(KULLANIM[id]):'';
+const sikMetin=(x,b)=>{ if(x.id==='P5'&&b&&b.leke) return P5_LEKE+kullanim(x.id); if(!x.sik) return kullanim(x.id).trim(); const s=adla(x.sik).replace(/\.$/,''); return s.charAt(0).toLocaleUpperCase('tr-TR')+s.slice(1)+'.'+kullanim(x.id); };
+function haftalikHtml(h,b){
+  const [cls,lbl]=ETK[h.items[0].e]||ETK.a;
+  const alt=h.items.slice(1).map(x=>`${urunHtml(x.id)} - ${sikMetin(x,b)}`).join('<br>');
+  return `<li class="urun"><b>${h.items[0].ad||'Haftalık'}:</b> ${urunHtml(h.u[0])}${YAYIN?'':` <span class="etiket ${cls}">${lbl}</span>`}<div class="kucuk">${sikMetin(h.items[0],b)}</div>${alt?`<div class="ya">ya da: ${alt} (aynı akşam değil)</div>`:''}</li>`;
+}
+function toplamAciklama(b,r){
+  const iki=(r.bloklar||[]).length>1, m=['Ortak ürünler bir kez sayılmıştır.'];
+  if(b.sinir){ m.push('Bütçe sınırı, her rutin bölümünde ilk sırada gösterilen ürünlerden birer adet için ayrı uygulanır.'); if(iki) m.push('"Şimdi" ve "Sonra" bölümleri birlikte alınırsa toplam harcama seçtiğiniz sınırı aşabilir.'); }
+  else if(iki) m.push('"Şimdi" ve "Sonra" bölümlerinin tutarı ayrı hesaplanır; ikisi birlikte alınırsa toplam harcama artar.');
+  m.push('Alternatifler, kullanım notlarında belirtilen ek ürünler ve "İleride" bölümü bu hesaba dahil değildir. Alternatif ürün seçmeniz tutarı değiştirir.');
+  return m.join(' ');
+}
+function blokHtml(b,c,r){
+  const bas=b.tur==='sonra'?`Sonra: tam rutin`:(b.tur==='simdi'?b.baslik:(b.tur==='sade'?b.baslik:'Size özel rutin: '+r.sk.slice(0,2).map(s=>SIKAYET[s]).join(' + ')));
+  return `<div class="kart"><h2>${bas}</h2>
+   ${b.islemOn?`<div class="kutu k-uyari"><b>İşlem yapılan bölge:</b> ${b.islemOn}</div>`:''}
+   ${b.tur==='sonra'?`<div class="kutu k-ok"><b>Başlama:</b> ${b.baslama}. Başlarken ilk 2 hafta yalnız temel adımlar ve serum; haftalık ürünlere en erken 3. haftada başlayın (bir ürün için daha uzun bekleme yazılmışsa o geçerlidir).</div>`:''}
+   ${b.islemUyari?`<div class="kutu k-uyari"><b>İşlem sonrası:</b> ${b.islemUyari}</div>`:''}
+   ${b.tur!=='simdi'&&b.tur!=='sade'?`<p class="alt">Cilt tipi: ${TIP[c.tip]} · Hedef: "${KURAL[r.ana].hedef}"</p>`:''}
+   <div class="zaman">
+    <div><h3>☀️ Sabah</h3><ol class="adim">${b.sabah.map(adimHtml).join('')}</ol></div>
+    <div><h3>🌙 Akşam</h3><ol class="adim">${b.aksam.map(adimHtml).join('')}</ol></div>
+   </div>
+   ${b.haftalik.length?`<h3>Haftalık bakım</h3><ul class="adim">${b.haftalik.map(h=>haftalikHtml(h,b)).join('')}</ul>${(b.hnot||[]).length?`<p class="kucuk">${b.hnot.map(adla).join(' ')}</p>`:''}`:''}
+   ${b.gunici?`<h3>Gün içinde</h3><ul class="adim">${adimHtml(b.gunici)}</ul>`:''}
+   ${b.notlar.length?`<div class="kutu k-bilgi"><b>Kullanım notları</b><ul>${b.notlar.map(n=>`<li>${adla(n)}</li>`).join('')}</ul></div>`:''}
+   <p class="toplam">İlk sırada gösterilen ürünlerden birer adet için hesaplanan tutar: ${tl(b.toplam)}.</p>
+   <p class="kucuk">${toplamAciklama(b,r)} Fiyatlar ${FIYAT_TARIHI} itibarıyla sitedeki satış fiyatlarıdır; güncel fiyat ürün sayfasındadır.${b.sinir?` Seçtiğiniz başlangıç için üst sınır: ${tl(b.sinir)}.`:''}</p>
+   ${b.ileride.length?`<div class="kutu k-bilgi"><b>İleride ekleyebilecekleriniz</b><ul>${b.ileride.map(x=>`<li class="urun">${urunHtml(x.id)} <span class="kucuk">- ${x.neden}</span>${x.sik||KULLANIM[x.id]?`<div class="kucuk">${sikMetin(x,b)}</div>`:''}</li>`).join('')}</ul>${!b.haftalik.length&&(b.hnot||[]).length?`<p class="kucuk">${b.hnot.map(adla).join(' ')}</p>`:''}<span class="kucuk">Bu bölümdeki ürünler (birer adet): ${tl(b.ileriToplam||0)}</span></div>`:''}
+  </div>`;
+}
+function goster(c,r){
+  const el=document.getElementById('sonuc'); el.classList.remove('gizli');
+  const yasal='<p class="yasal-sonuc">Tıbbi tavsiye değildir; kozmetik bakım önerisidir. Sonuçlar kişiden kişiye değişir.</p>';
+  if(r.yonlendir){
+    el.innerHTML=`<div class="kart"><h2>Sonucunuz</h2>${r.uyarilar.map(([t,m])=>`<div class="kutu k-${t}"><b>${m}</b></div>`).join('')}<p class="kucuk">Bu durumda ürün önerisi yapmıyoruz.</p>${yasal}${temizleHtml}</div>${YAYIN?'':elifPanel(r)}`;
+    el.scrollIntoView({behavior:'smooth'}); return;
+  }
+  const uy=r.uyarilar.map(([t,m])=>`<div class="kutu k-${t}">${m}</div>`).join('');
+  const destekTakviye=r.destek.filter(d=>!d.takviyeDegil), destekAl=r.destek.filter(d=>d.takviyeDegil);
+  el.innerHTML=`${uy?`<div class="kart">${uy}</div>`:''}
+  ${r.bloklar.map(b=>blokHtml(b,c,r)).join('')}
+  ${YAYIN?eylemHtml(c,r):denemeEylem()}
+  ${r.destek.length?`<div class="kart"><h2>Bakımın dışında: genel bilgi</h2>
+   ${destekTakviye.length?`<p class="kucuk">Bu test takviye ihtiyacınızı belirlemez. Takviye satırları eczacı danışmanlığında hazırlanmıştır; marka ve doz içermez.</p><ul>${destekTakviye.map(d=>`<li><b>${d.ad}:</b> ${d.m}</li>`).join('')}</ul>`:''}
+   ${destekAl.length?`<ul>${destekAl.map(d=>`<li><b>${d.ad}:</b> ${d.m}</li>`).join('')}</ul>`:''}</div>`:''}
+  ${yasal}${temizleHtml}
+  ${YAYIN?'':elifPanel(r)}`;
+  el.scrollIntoView({behavior:'smooth'});
+}
+const temizleHtml='<div class="butonlar"><button type="button" class="ikincil kucuk-dugme" onclick="cevapTemizle()">Cevapları temizle</button></div>';
+function cevapTemizle(){
+  const f=document.getElementById('f'); if(f&&f.reset) f.reset(); sira=[];
+  document.querySelectorAll('#sikayetler .sira').forEach(s=>s.classList.add('gizli'));
+  document.getElementById('islemTarihKutu').classList.add('gizli');
+  const el=document.getElementById('sonuc'); el.innerHTML=''; el.classList.add('gizli');
+  bildirSil('b-form'); bildirSil('b-sikayet');
+  if(typeof window!=='undefined' && window.scrollTo) window.scrollTo({top:0,behavior:'smooth'});
+}
+const WA_NO='905395749555';
+const WA_MESAJ='Merhaba, Cildinin Hikâyesi testini kullandım. Rutinim hakkında bilgi almak istiyorum.';
+function waMesaj(){ return WA_MESAJ; }
+function waLink(c,r){ return 'https://wa.me/'+WA_NO+'?text='+encodeURIComponent(waMesaj(c,r)); }
+function eylemHtml(c,r){
+  return `<p class="kucuk ortala">Ürünleri sitede görmek için ürün adına ya da "Ürüne git" bağlantısına dokunun; sepete ürün sayfasından ekleyebilirsiniz.</p>
+  <div class="butonlar"><a class="dugme" href="${waLink(c,r)}" target="_blank" rel="noopener">Elif Hanım da baksın</a></div>
+  <p class="kucuk ortala">WhatsApp'ta Elif Hanım'a gönderilmek üzere sabit bir mesaj hazırlanır. Test cevaplarınız ve rutininiz bu mesaja eklenmez. Mesajı göndermeden önce görürsünüz; Elif Hanım'a ancak siz gönderirseniz ulaşır. Lütfen test cevaplarınızı, sonuç ekranının görüntüsünü veya sağlık bilgilerinizi bu mesajla paylaşmayın.</p>`;
+}
+
+function hazirla(){
+  const c={sikayet:[...sira], tip:tek('tip'), yas:tek('yas'), gunes:tek('gunes'), renkli:tek('renkli'), makyaj:tek('makyaj'), sigara:tek('sigara'), tatil:tek('tatil'), butce:tek('butce'),
+    gebelik:tek('gebelik'), ilac:cok('ilac'), islem:cok('islem'), islemTarih:document.getElementById('islemTarihYok').checked?'':document.getElementById('islemTarih').value,
+    alerji:cok('alerji'), kirmizi:cok('kirmizi'), mevcut:(document.getElementById('mevcut')||{value:''}).value.trim()};
+  const eksik=[];
+  if(!c.sikayet.length)eksik.push('şikâyet'); if(!c.tip)eksik.push('cilt tipi'); if(!c.yas)eksik.push('yaş'); if(!c.gunes)eksik.push('güneş koruyucu');
+  if(!c.renkli)eksik.push('renkli koruyucu'); if(!c.makyaj)eksik.push('makyaj'); if(!c.tatil)eksik.push('tatil/bronzluk'); if(!c.butce)eksik.push('başlangıç (bütçe)');
+  if(!c.gebelik)eksik.push('gebelik'); if(!c.ilac.length)eksik.push('ilaç'); if(!c.islem.length)eksik.push('işlem');
+  if(c.islem.some(x=>x!=='yok') && !c.islemTarih && !document.getElementById('islemTarihYok').checked) eksik.push('işlem tarihi (ya da "Hatırlamıyorum")');
+  if(!c.alerji.length)eksik.push('alerji'); if(!c.kirmizi.length)eksik.push('son soru (hiçbiri dahil)');
+  if(eksik.length){bildir('Lütfen şunları doldurun: '+eksik.join(', '),'b-form');return;}
+  bildirSil('b-form');
+  const r=motor(c); goster(c,r); if(!YAYIN) ozetNot(c,r);
+}
+
+</script>
+</body>
+</html>
